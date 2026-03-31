@@ -66,6 +66,20 @@ export default function TermsPage() {
           <h2>6. Third-Party Content &amp; Trademarks</h2>
           <p>Nestwise displays content sourced from third-party platforms. All trademarks, service marks, and trade names referenced on Nestwise (including Zillow®, Redfin®, Craigslist®, and Apartments.com®) are the property of their respective owners. Nestwise is not affiliated with, endorsed by, or sponsored by any of these companies.</p>
 
+          <h2>6a. Fraudulent, Scam, and Phishing Listings</h2>
+          <p>Nestwise aggregates listings from third-party sources including Craigslist and property management websites. <strong>We do not verify the authenticity, legitimacy, or accuracy of any listing.</strong> Fraudulent, scam, and phishing listings — including fake rentals designed to collect personal information or payments — may appear on third-party platforms and may be inadvertently surfaced by Nestwise.</p>
+          <p><strong>Nestwise is not responsible for fraudulent listings originating from third-party sources.</strong> We expressly disclaim all liability for any harm, financial loss, identity theft, or damages resulting from a user interacting with a fraudulent or scam listing displayed on our platform.</p>
+          <p>To protect yourself:</p>
+          <ul>
+            <li>Never wire money, send gift cards, or pay a deposit before viewing a property in person</li>
+            <li>Never provide personal financial information (SSN, bank account numbers) to unverified landlords</li>
+            <li>Be cautious of listings priced significantly below market rate — this is a common scam indicator</li>
+            <li>Verify the landlord&apos;s identity and ownership of the property before signing any agreement</li>
+            <li>Report suspected scam listings to us at <a href="mailto:hello@nestwise-sf.com" style={{ color: '#c9a84c' }}>hello@nestwise-sf.com</a> and to the source platform directly</li>
+          </ul>
+          <p>If you believe you have encountered a fraudulent listing on Nestwise, contact us immediately. We will remove it from our platform upon verification. However, removal does not create liability on our part for any prior interactions with that listing.</p>
+          <div className="attorney-note">⚠️ Attorney review recommended: Consider whether additional language is needed to comply with California consumer protection law (CLRA) given that Nestwise charges users for access to a service that may surface fraudulent third-party content.</div>
+
           <h2>7. User Conduct</h2>
           <p>By using Nestwise, you agree not to:</p>
           <ul>
