@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-31T17:31:04Z",
+  "updated": "2026-03-31T18:38:17Z",
   "listings": [
     {
       "id": "https://gaetanirealestate.appfolio.com/listings/detail/ac1e1ad4-5ac1-4523-b482-e0e340b73cb4",
@@ -21,6 +21,27 @@
         "\ud83d\udc3e Pets OK",
         "Parking",
         "PM site exclusive \u26a1"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-top-floor-1bd-in-nob-hill/7920831416.html",
+      "source": "Craigslist",
+      "title": "Top-Floor 1BD in Nob Hill \u2013 Dishwasher & Small Pets Welcome",
+      "address": "Top-Floor 1BD in Nob Hill \u2013 Dishwasher & Small Pets Welcome",
+      "neighborhood": "Nob Hill",
+      "rent": 3695,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-top-floor-1bd-in-nob-hill/7920831416.html",
+      "img": "https://images.craigslist.org/00R0R_gaPcKIaK8NR_0CI0lM_600x450.jpg",
+      "pet_policy": "pets_ok",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 80,
+      "score_notes": [
+        "Mid-tier hood",
+        "Under $4k",
+        "\ud83d\udc3e Pets OK"
       ]
     },
     {
@@ -225,6 +246,26 @@
       ]
     },
     {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-one-rincon-hill-bd-ba/7924745456.html",
+      "source": "Craigslist",
+      "title": "ONE RINCON HILL | 1 BD / 1 BA With Full Marina and Bay Bridge Views",
+      "address": "ONE RINCON HILL | 1 BD / 1 BA With Full Marina and Bay Bridge Views",
+      "neighborhood": "Marina",
+      "rent": 5490,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-one-rincon-hill-bd-ba/7924745456.html",
+      "img": "https://images.craigslist.org/01717_8HonhJzOKN7_0x20m1_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": true,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 70,
+      "score_notes": [
+        "Top-tier hood",
+        "Parking"
+      ]
+    },
+    {
       "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-bright-2br-with-open/7924674137.html",
       "source": "Craigslist",
       "title": "Bright 2BR with Open Vistas in Pacific Heights! Unit #602",
@@ -273,25 +314,6 @@
       "beds": 1,
       "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7924715338.html",
       "img": "https://images.craigslist.org/00L0L_hZrhqpamuxP_1u8176_600x450.jpg",
-      "pet_policy": "unknown",
-      "parking": false,
-      "laundry": "shared",
-      "outdoor": false,
-      "score": 65,
-      "score_notes": [
-        "Top-tier hood"
-      ]
-    },
-    {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-san-francisco-bedroom/7920590322.html",
-      "source": "Craigslist",
-      "title": "San Francisco 2 Bedroom/2 Bathroom Apartment in the Marina",
-      "address": "San Francisco 2 Bedroom/2 Bathroom Apartment in the Marina",
-      "neighborhood": "Marina",
-      "rent": 4995,
-      "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-san-francisco-bedroom/7920590322.html",
-      "img": "https://images.craigslist.org/01010_4Dq5wuNIdHx_0CI0t2_600x450.jpg",
       "pet_policy": "unknown",
       "parking": false,
       "laundry": "shared",
@@ -358,6 +380,27 @@
       "score_notes": [
         "Mid-tier hood",
         "PM site exclusive \u26a1"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-spacious-2br-2ba-with-in/7921280205.html",
+      "source": "Craigslist",
+      "title": "Spacious 2BR / 2BA with In-Unit Laundry in the Inner Richmond",
+      "address": "Spacious 2BR / 2BA with In-Unit Laundry in the Inner Richmond",
+      "neighborhood": "Inner Richmond",
+      "rent": 4795,
+      "beds": 2,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-spacious-2br-2ba-with-in/7921280205.html",
+      "img": "https://images.craigslist.org/00101_cIJR6qUdgn_0CI0lM_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "in-unit",
+      "outdoor": false,
+      "score": 45,
+      "score_notes": [
+        "Value hood",
+        "2+ BR",
+        "In-unit laundry"
       ]
     }
   ]
