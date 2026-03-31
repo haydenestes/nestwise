@@ -293,7 +293,7 @@ export default function LandingPage() {
             <div className="hero-nav-links">
               <a href="#">How it works</a>
               <a href="#">Neighborhoods</a>
-              <a href="#" className="hero-signin">Sign in</a>
+              <a href="/signin" className="hero-signin">Sign in</a>
             </div>
           </nav>
 
@@ -326,7 +326,7 @@ export default function LandingPage() {
 
             {/* CTA */}
             <div className="hero-cta">
-              <button className="btn-primary-hero" onClick={() => router.push('/criteria')}>
+              <button className="btn-primary-hero" onClick={() => router.push('/signup')}>
                 Start my search →
               </button>
               <button className="btn-ghost-hero">See how it works</button>
