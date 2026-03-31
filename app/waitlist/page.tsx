@@ -116,7 +116,8 @@ export default function WaitlistPage() {
                 <div style={{ fontSize: '11px', letterSpacing: '0.12em', color: '#c9a84c', textTransform: 'uppercase', marginBottom: '20px' }}>Founding Member Perks</div>
                 {[
                   { icon: '✦', text: '3 months free access — no credit card required' },
-                  { icon: '✦', text: 'Your name in the app as a founding member' },
+                  { icon: '✦', text: 'Founding member badge on your account' },
+                  { icon: '✦', text: 'Priority alerts before public launch' },
                   { icon: '✦', text: 'Direct line to the founder' },
                 ].map(p => (
                   <div key={p.text} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', marginBottom: '12px', textAlign: 'left' }}>

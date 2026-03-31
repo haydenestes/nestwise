@@ -1,11 +1,6 @@
+'use client';
 import Link from 'next/link';
 import { NEIGHBORHOODS } from '@/lib/neighborhoodData';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'SF Neighborhoods | Nestwise',
-  description: 'Explore rental listings across every major San Francisco neighborhood — Marina, Pacific Heights, Noe Valley, and more.',
-};
 
 const TIER_STYLE: Record<number, { label: string; color: string; bg: string }> = {
   1: { label: 'Premium', color: '#c9a84c', bg: 'rgba(201,168,76,0.1)' },
@@ -13,6 +8,7 @@ const TIER_STYLE: Record<number, { label: string; color: string; bg: string }> =
   3: { label: 'Value',   color: '#9ad7a3', bg: 'rgba(154,215,163,0.08)' },
 };
 
+export const dynamic = 'force-dynamic';
 export default function NeighborhoodsHub() {
   const tiers = [1, 2, 3] as const;
   return (
