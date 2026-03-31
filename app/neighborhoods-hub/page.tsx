@@ -1,13 +1,12 @@
 'use client';
-export const dynamic = 'force-dynamic';
 
 import Link from 'next/link';
 import { NEIGHBORHOODS } from '@/lib/neighborhoodData';
 
 const TIER_STYLE: Record<number, { label: string; color: string; bg: string }> = {
-  1: { label: 'Iconic SF',        color: '#c9a84c', bg: 'rgba(201,168,76,0.1)' },
+  1: { label: 'Iconic SF',         color: '#c9a84c', bg: 'rgba(201,168,76,0.1)' },
   2: { label: 'Neighborhood Soul', color: '#63b3ed', bg: 'rgba(99,179,237,0.08)' },
-  3: { label: 'Local Favorite',   color: '#9ad7a3', bg: 'rgba(154,215,163,0.08)' },
+  3: { label: 'Local Favorite',    color: '#9ad7a3', bg: 'rgba(154,215,163,0.08)' },
 };
 
 export default function NeighborhoodsHub() {
@@ -32,23 +31,19 @@ export default function NeighborhoodsHub() {
             <Link href="/signin" style={{ fontSize: '12px', color: 'rgba(240,235,224,0.5)', textDecoration: 'none' }}>Sign in</Link>
           </div>
         </nav>
-
         <div style={{ maxWidth: '960px', margin: '0 auto', padding: '56px 24px 80px' }}>
           <div style={{ fontSize: '10px', letterSpacing: '0.22em', color: '#c9a84c', textTransform: 'uppercase', marginBottom: '12px' }}>Explore SF</div>
           <h1 style={{ fontFamily: 'Cormorant Garamond, Georgia, serif', fontSize: '48px', fontWeight: 300, color: '#f0ebe0', marginBottom: '8px' }}>SF Neighborhoods</h1>
           <p style={{ fontSize: '14px', color: 'rgba(240,235,224,0.5)', marginBottom: '48px', lineHeight: 1.6 }}>
             Browse rentals by neighborhood — each with real listings, average rents, and neighborhood intelligence.
           </p>
-
           {tiers.map(tier => {
             const hoods = NEIGHBORHOODS.filter(n => n.tier === tier);
             const s = TIER_STYLE[tier];
             return (
               <div key={tier}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
-                  <span style={{ fontSize: '10px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', background: s.bg, color: s.color, padding: '3px 10px', borderRadius: '3px' }}>
-                    Tier {tier} · {s.label}
-                  </span>
+                  <span style={{ fontSize: '10px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', background: s.bg, color: s.color, padding: '3px 10px', borderRadius: '3px' }}>{s.label}</span>
                   <div style={{ flex: 1, height: '1px', background: 'rgba(240,235,224,0.07)' }} />
                 </div>
                 <div className="hood-grid">
@@ -65,14 +60,8 @@ export default function NeighborhoodsHub() {
               </div>
             );
           })}
-
           <div style={{ textAlign: 'center', marginTop: '16px' }}>
-            <Link href="/search" style={{
-              display: 'inline-block', background: '#c9a84c', color: '#0e0c0a',
-              borderRadius: '4px', fontSize: '12px', fontWeight: 500,
-              letterSpacing: '0.08em', textTransform: 'uppercase',
-              padding: '12px 28px', textDecoration: 'none',
-            }}>
+            <Link href="/search" style={{ display: 'inline-block', background: '#c9a84c', color: '#0e0c0a', borderRadius: '4px', fontSize: '12px', fontWeight: 500, letterSpacing: '0.08em', textTransform: 'uppercase', padding: '12px 28px', textDecoration: 'none' }}>
               Search all neighborhoods →
             </Link>
           </div>
