@@ -1,4 +1,6 @@
 'use client';
+export const dynamic = 'force-dynamic';
+
 import Link from 'next/link';
 import { NEIGHBORHOODS } from '@/lib/neighborhoodData';
 
@@ -8,7 +10,6 @@ const TIER_STYLE: Record<number, { label: string; color: string; bg: string }> =
   3: { label: 'Value',   color: '#9ad7a3', bg: 'rgba(154,215,163,0.08)' },
 };
 
-export const dynamic = 'force-dynamic';
 export default function NeighborhoodsHub() {
   const tiers = [1, 2, 3] as const;
   return (
@@ -20,6 +21,8 @@ export default function NeighborhoodsHub() {
         .hood-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-bottom: 48px; }
         @media(max-width:800px) { .hood-grid { grid-template-columns: repeat(2,1fr); } }
         @media(max-width:500px) { .hood-grid { grid-template-columns: 1fr; } }
+        .hood-card { background: #161310; border: 1px solid rgba(240,235,224,0.08); border-radius: 8px; padding: 18px 20px; text-decoration: none; display: block; transition: border-color 0.15s; }
+        .hood-card:hover { border-color: rgba(201,168,76,0.3); }
       `}</style>
       <div style={{ minHeight: '100vh', background: '#0e0c0a', color: '#f0ebe0', fontFamily: 'Inter, sans-serif' }}>
         <nav style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '24px 48px', borderBottom: '1px solid rgba(240,235,224,0.07)' }}>
@@ -50,20 +53,11 @@ export default function NeighborhoodsHub() {
                 </div>
                 <div className="hood-grid">
                   {hoods.map(h => (
-                    <Link key={h.slug} href={`/neighborhoods/${h.slug}`} style={{ textDecoration: 'none' }}>
-                      <div style={{
-                        background: '#161310', border: '1px solid rgba(240,235,224,0.08)',
-                        borderRadius: '8px', padding: '18px 20px',
-                        transition: 'border-color 0.15s',
-                      }}
-                        onMouseOver={e => (e.currentTarget.style.borderColor = 'rgba(201,168,76,0.3)')}
-                        onMouseOut={e => (e.currentTarget.style.borderColor = 'rgba(240,235,224,0.08)')}
-                      >
-                        <div style={{ fontSize: '15px', fontWeight: 500, color: '#f0ebe0', marginBottom: '4px' }}>{h.name}</div>
-                        <div style={{ fontSize: '12px', color: 'rgba(240,235,224,0.4)', marginBottom: '10px' }}>{h.bullets[0].slice(0, 60)}…</div>
-                        <div style={{ fontFamily: 'Cormorant Garamond, Georgia, serif', fontSize: '20px', color: '#c9a84c' }}>
-                          ${h.avgRent.toLocaleString()}<span style={{ fontSize: '12px', color: 'rgba(240,235,224,0.35)' }}>/mo avg</span>
-                        </div>
+                    <Link key={h.slug} href={`/neighborhoods/${h.slug}`} className="hood-card">
+                      <div style={{ fontSize: '15px', fontWeight: 500, color: '#f0ebe0', marginBottom: '4px' }}>{h.name}</div>
+                      <div style={{ fontSize: '12px', color: 'rgba(240,235,224,0.4)', marginBottom: '10px' }}>{h.bullets[0].slice(0, 60)}…</div>
+                      <div style={{ fontFamily: 'Cormorant Garamond, Georgia, serif', fontSize: '20px', color: '#c9a84c' }}>
+                        ${h.avgRent.toLocaleString()}<span style={{ fontSize: '12px', color: 'rgba(240,235,224,0.35)' }}>/mo avg</span>
                       </div>
                     </Link>
                   ))}
