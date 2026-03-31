@@ -2,7 +2,7 @@
 
 export const dynamic = 'force-dynamic';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { getSupabase } from '@/lib/supabase';
@@ -14,6 +14,12 @@ export default function SignUpPage() {
   const [password, setPassword] = useState('');
   const [loading, setLoading]   = useState(false);
   const [error, setError]       = useState('');
+  const [affCode, setAffCode]   = useState('');
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    setAffCode(params.get('aff') || '');
+  }, []);
 
   async function handleSignUp(e: React.FormEvent) {
     e.preventDefault();
@@ -27,6 +33,14 @@ export default function SignUpPage() {
       });
       if (error) { setError(error.message); setLoading(false); return; }
       if (data?.user) {
+        // Track affiliate conversion if signup came via affiliate link
+        if (affCode) {
+          fetch('/api/affiliate', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ affiliateCode: affCode, newUserEmail: email }),
+          }).catch(() => {}); // fire and forget
+        }
         router.push('/criteria');
       } else {
         setError('Account created but could not sign in. Please try signing in.');
