@@ -9,6 +9,7 @@ import { SF_NEIGHBORHOODS, UNIT_TYPES, PET_OPTIONS, AMENITIES, ALERT_TIMES } fro
 
 export default function CriteriaPage() {
   const router = useRouter();
+  const [checkoutLoading, setCheckoutLoading] = React.useState(false);
   const {
     user,
     setAuthOpen,
@@ -26,13 +27,30 @@ export default function CriteriaPage() {
     email, setEmail,
   } = useApp();
 
-  function handleStartSearch() {
-    if (!user) {
+  async function handleStartSearch() {
+    if (!email) {
+      // Need email for Stripe + alerts
       setAuthMode('signup');
       setAuthOpen(true);
-    } else {
-      setShowSuccess(true);
-      // SuccessOverlay in Providers handles the 2.4s delay + router.push('/dashboard')
+      return;
+    }
+    setCheckoutLoading(true);
+    try {
+      const res = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+      const data = await res.json();
+      if (data.url) {
+        window.location.href = data.url; // redirect to Stripe checkout
+      } else {
+        alert('Something went wrong. Please try again.');
+        setCheckoutLoading(false);
+      }
+    } catch {
+      alert('Something went wrong. Please try again.');
+      setCheckoutLoading(false);
     }
   }
 
@@ -247,8 +265,8 @@ export default function CriteriaPage() {
           </strong>{' '}
           &middot; <strong>{beds.join(', ') || 'Any size'}</strong>
         </div>
-        <button className="btn-primary" onClick={handleStartSearch}>
-          Start My Search →
+        <button className="btn-primary" onClick={handleStartSearch} disabled={checkoutLoading}>
+          {checkoutLoading ? 'Redirecting to checkout…' : 'Start My Search →'}
         </button>
       </div>
     </div>
