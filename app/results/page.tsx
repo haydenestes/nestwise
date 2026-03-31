@@ -166,6 +166,14 @@ function ListingCard({ listing, onGated }: { listing: MockListing; onGated: () =
         <div className="card-actions">
           <button className="btn-action" onClick={onGated}>♡ Save</button>
           <button className="btn-action" onClick={onGated}>🔔 Alerts</button>
+          <button className="btn-action" onClick={() => {
+            const url = `${window.location.origin}?ref=SHARE`;
+            navigator.clipboard.writeText(url);
+            const btn = document.activeElement as HTMLButtonElement;
+            const orig = btn.textContent;
+            btn.textContent = '✓ Copied';
+            setTimeout(() => { btn.textContent = orig; }, 1500);
+          }} title="Copy referral link">⧉</button>
         </div>
       </div>
     </div>

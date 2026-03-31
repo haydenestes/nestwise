@@ -3,8 +3,21 @@ import './globals.css';
 import Providers from '@/components/Providers';
 
 export const metadata: Metadata = {
-  title: 'NestWise — Curated SF Rentals',
-  description: 'Find your ideal San Francisco rental with NestWise.',
+  title: 'Nestwise — SF Rental Intelligence',
+  description: 'Find your perfect SF apartment before anyone else. Nestwise scans every listing in real time.',
+  robots: 'index, follow',
+  openGraph: {
+    title: 'Nestwise — SF Rental Intelligence',
+    description: 'Find your perfect SF apartment before anyone else.',
+    url: 'https://nestwise-sf.vercel.app',
+    siteName: 'Nestwise',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Nestwise — SF Rental Intelligence',
+    description: 'Find your perfect SF apartment before anyone else.',
+  },
 };
 
 export default function RootLayout({

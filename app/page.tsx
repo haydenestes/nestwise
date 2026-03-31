@@ -350,6 +350,18 @@ export default function LandingPage() {
           </div>
         </div>
 
+        {/* Product Hunt badge */}
+        <a href="https://www.producthunt.com" target="_blank" rel="noreferrer" style={{
+          position: 'fixed', bottom: '24px', right: '24px', zIndex: 100, opacity: 0.7,
+          transition: 'opacity 0.2s',
+        }}
+          onMouseOver={e => (e.currentTarget.style.opacity = '1')}
+          onMouseOut={e => (e.currentTarget.style.opacity = '0.7')}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=nestwise&theme=dark" alt="Nestwise on Product Hunt" style={{ width: '180px', height: 'auto' }} />
+        </a>
+
         {/* ── RIGHT ── */}
         <div className="hero-right">
           {/* eslint-disable-next-line @next/next/no-img-element */}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://nestwise-sf.vercel.app/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://nestwise-sf.vercel.app/search</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://nestwise-sf.vercel.app/waitlist</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nestwise-sf.vercel.app/report</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://nestwise-sf.vercel.app/neighborhoods/marina</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nestwise-sf.vercel.app/neighborhoods/pacific-heights</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nestwise-sf.vercel.app/neighborhoods/russian-hill</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nestwise-sf.vercel.app/neighborhoods/cow-hollow</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nestwise-sf.vercel.app/neighborhoods/noe-valley</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://nestwise-sf.vercel.app/neighborhoods/hayes-valley</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://nestwise-sf.vercel.app/neighborhoods/castro</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://nestwise-sf.vercel.app/neighborhoods/mission</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://nestwise-sf.vercel.app/neighborhoods/soma</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://nestwise-sf.vercel.app/neighborhoods/richmond</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://nestwise-sf.vercel.app/neighborhoods/dogpatch</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://nestwise-sf.vercel.app/neighborhoods/bernal-heights</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://nestwise-sf.vercel.app/terms</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://nestwise-sf.vercel.app/privacy</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+</urlset>
