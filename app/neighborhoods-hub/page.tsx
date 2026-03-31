@@ -64,7 +64,7 @@ export default function NeighborhoodsHub() {
                         onMouseOut={e => (e.currentTarget.style.borderColor = 'rgba(240,235,224,0.08)')}
                       >
                         <div style={{ fontSize: '15px', fontWeight: 500, color: '#f0ebe0', marginBottom: '4px' }}>{h.name}</div>
-                        <div style={{ fontSize: '12px', color: 'rgba(240,235,224,0.4)', marginBottom: '10px' }}>{h.desc}</div>
+                        <div style={{ fontSize: '12px', color: 'rgba(240,235,224,0.4)', marginBottom: '10px' }}>{h.bullets[0].slice(0, 60)}…</div>
                         <div style={{ fontFamily: 'Cormorant Garamond, Georgia, serif', fontSize: '20px', color: '#c9a84c' }}>
                           ${h.avgRent.toLocaleString()}<span style={{ fontSize: '12px', color: 'rgba(240,235,224,0.35)' }}>/mo avg</span>
                         </div>
