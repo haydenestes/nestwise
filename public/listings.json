@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-31T05:20:04Z",
+  "updated": "2026-03-31T07:21:54Z",
   "listings": [
     {
       "id": "https://gaetanirealestate.appfolio.com/listings/detail/ac1e1ad4-5ac1-4523-b482-e0e340b73cb4",
@@ -225,6 +225,27 @@
       ]
     },
     {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-bright-modern-3br-2ba/7924643290.html",
+      "source": "Craigslist",
+      "title": "BRIGHT MODERN 3BR/2BA w/ PRIVATE DECK- VIEWS of PACIFIC HEIGHTS",
+      "address": "BRIGHT MODERN 3BR/2BA w/ PRIVATE DECK- VIEWS of PACIFIC HEIGHTS",
+      "neighborhood": "Pacific Heights",
+      "rent": 4525,
+      "beds": 3,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-bright-modern-3br-2ba/7924643290.html",
+      "img": "https://images.craigslist.org/00u0u_jPA54IwQOJ_0t20jm_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": true,
+      "score": 73,
+      "score_notes": [
+        "Top-tier hood",
+        "2+ BR",
+        "Outdoor space"
+      ]
+    },
+    {
       "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-bedroom-russian-hill/7924604631.html",
       "source": "Craigslist",
       "title": "1 bedroom/Russian Hill/1340Lombard&Polk/W/D in unit/Coming Soon!",
@@ -433,26 +454,6 @@
       "beds": 1,
       "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-1br-with-in-unit-d-and/7924587072.html",
       "img": "https://images.craigslist.org/00505_ftj6hC5tmx2_0CI0lM_600x450.jpg",
-      "pet_policy": "unknown",
-      "parking": false,
-      "laundry": "shared",
-      "outdoor": false,
-      "score": 60,
-      "score_notes": [
-        "Mid-tier hood",
-        "Under $4k"
-      ]
-    },
-    {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-elegant-1br-near-hayes/7924583273.html",
-      "source": "Craigslist",
-      "title": "Elegant 1BR \u2013 Near Hayes Valley Boutiques & Dining! Unit #410",
-      "address": "Elegant 1BR \u2013 Near Hayes Valley Boutiques & Dining! Unit #410",
-      "neighborhood": "Hayes Valley",
-      "rent": 3790,
-      "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-elegant-1br-near-hayes/7924583273.html",
-      "img": "https://images.craigslist.org/00k0k_1JEDsCUGH82_0CI0lM_600x450.jpg",
       "pet_policy": "unknown",
       "parking": false,
       "laundry": "shared",
