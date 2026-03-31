@@ -327,7 +327,7 @@ export default function LandingPage() {
 
             {/* CTA */}
             <div className="hero-cta">
-              <button className="btn-primary-hero" onClick={() => router.push('/signup')}>
+              <button className="btn-primary-hero" onClick={() => router.push('/search')}>
                 Start my search →
               </button>
               <button className="btn-ghost-hero">See how it works</button>
