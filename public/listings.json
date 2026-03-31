@@ -1,6 +1,28 @@
 {
-  "updated": "2026-03-31T02:52:48Z",
+  "updated": "2026-03-31T03:16:29Z",
   "listings": [
+    {
+      "id": "https://gaetanirealestate.appfolio.com/listings/detail/ac1e1ad4-5ac1-4523-b482-e0e340b73cb4",
+      "source": "Gaetani Real Estate",
+      "title": "801 Fillmore St",
+      "address": "801 Fillmore St",
+      "neighborhood": "Fillmore",
+      "rent": 3795,
+      "beds": 1,
+      "link": "https://gaetanirealestate.appfolio.com/listings/detail/ac1e1ad4-5ac1-4523-b482-e0e340b73cb4",
+      "pet_policy": "pets_ok",
+      "parking": true,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 90,
+      "score_notes": [
+        "Mid-tier hood",
+        "Under $4k",
+        "\ud83d\udc3e Pets OK",
+        "Parking",
+        "PM site exclusive \u26a1"
+      ]
+    },
     {
       "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-russian-hill-1801/7924594557.html",
       "source": "Craigslist",
@@ -31,6 +53,26 @@
       "rent": 3895,
       "beds": 1,
       "link": "https://chandlerproperties.com/rental-listings/?lid=fd52d675-cc47-470f-ab57-d3d5b411efff",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 80,
+      "score_notes": [
+        "Top-tier hood",
+        "Under $4k",
+        "PM site exclusive \u26a1"
+      ]
+    },
+    {
+      "id": "https://gaetanirealestate.appfolio.com/listings/detail/21b00564-edd5-420d-a3f0-a6b21471bf09",
+      "source": "Gaetani Real Estate",
+      "title": "2765 Gough St.",
+      "address": "2765 Gough St.",
+      "neighborhood": "Marina",
+      "rent": 3895,
+      "beds": 1,
+      "link": "https://gaetanirealestate.appfolio.com/listings/detail/21b00564-edd5-420d-a3f0-a6b21471bf09",
       "pet_policy": "unknown",
       "parking": false,
       "laundry": "shared",
@@ -298,6 +340,26 @@
       "score": 65,
       "score_notes": [
         "Top-tier hood"
+      ]
+    },
+    {
+      "id": "https://wcpm.appfolio.com/listings/detail/c32e1b03-cacf-4209-aba4-9b211d4ae737",
+      "source": "WCPM",
+      "title": "1680 Market St",
+      "address": "1680 Market St",
+      "neighborhood": "Hayes Valley",
+      "rent": 3800,
+      "beds": 1,
+      "link": "https://wcpm.appfolio.com/listings/detail/c32e1b03-cacf-4209-aba4-9b211d4ae737",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 65,
+      "score_notes": [
+        "Mid-tier hood",
+        "Under $4k",
+        "PM site exclusive \u26a1"
       ]
     },
     {
