@@ -80,7 +80,7 @@ export default function WaitlistPage() {
                 Get early access<br />before we launch.
               </h1>
               <p style={{ fontSize: '16px', color: 'rgba(240,235,224,0.55)', lineHeight: 1.65, marginBottom: '36px', maxWidth: '420px', margin: '0 auto 36px' }}>
-                Join SF renters who are already ahead of the market. <strong style={{ color: 'rgba(240,235,224,0.85)' }}>Founding members get 3 months free.</strong>
+                Join SF renters who are already ahead of the market. <strong style={{ color: 'rgba(240,235,224,0.85)' }}>Founding members get their first month free.</strong>
               </p>
 
               {referredBy && (
@@ -115,7 +115,7 @@ export default function WaitlistPage() {
               <div style={{ borderTop: '1px solid rgba(240,235,224,0.07)', paddingTop: '40px' }}>
                 <div style={{ fontSize: '11px', letterSpacing: '0.12em', color: '#c9a84c', textTransform: 'uppercase', marginBottom: '20px' }}>Founding Member Perks</div>
                 {[
-                  { icon: '✦', text: '3 months free access — no credit card required' },
+                  { icon: '✦', text: 'First month free — founding member discount' },
                   { icon: '✦', text: 'Founding member badge on your account' },
                   { icon: '✦', text: 'Priority alerts before public launch' },
                   { icon: '✦', text: 'Direct line to the founder' },
