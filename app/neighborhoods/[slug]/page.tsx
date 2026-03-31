@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 };
 
 const TIER_COLORS: Record<number, { bg: string; color: string; label: string }> = {
-  1: { bg: 'rgba(201,168,76,0.12)', color: '#c9a84c', label: 'Tier 1 · Premium' },
-  2: { bg: 'rgba(99,179,237,0.1)',  color: '#63b3ed', label: 'Tier 2 · Prime' },
-  3: { bg: 'rgba(154,215,163,0.1)', color: '#9ad7a3', label: 'Tier 3 · Value' },
+  1: { bg: 'rgba(201,168,76,0.12)', color: '#c9a84c', label: 'Iconic SF' },
+  2: { bg: 'rgba(99,179,237,0.1)',  color: '#63b3ed', label: 'Neighborhood Soul' },
+  3: { bg: 'rgba(154,215,163,0.1)', color: '#9ad7a3', label: 'Local Favorite' },
 };
 
 const MOCK_CARDS = [

@@ -13,7 +13,7 @@ export const NEIGHBORHOODS: NeighborhoodData[] = [
     slug: 'marina',
     name: 'Marina',
     tier: 1,
-    tierLabel: 'Premium',
+    tierLabel: 'Iconic SF',
     avgRent: 3850,
     bullets: [
       'Walkable waterfront neighborhood with boutique shops and top-rated restaurants along Chestnut and Union Streets',
@@ -26,7 +26,7 @@ export const NEIGHBORHOODS: NeighborhoodData[] = [
     slug: 'pacific-heights',
     name: 'Pacific Heights',
     tier: 1,
-    tierLabel: 'Premium',
+    tierLabel: 'Iconic SF',
     avgRent: 4000,
     bullets: [
       'One of SF\'s most prestigious addresses with sweeping views of the Bay and Golden Gate Bridge',
@@ -39,7 +39,7 @@ export const NEIGHBORHOODS: NeighborhoodData[] = [
     slug: 'russian-hill',
     name: 'Russian Hill',
     tier: 1,
-    tierLabel: 'Premium',
+    tierLabel: 'Iconic SF',
     avgRent: 3900,
     bullets: [
       'Iconic SF neighborhood known for Lombard Street, stunning city panoramas, and quiet residential streets',
@@ -52,7 +52,7 @@ export const NEIGHBORHOODS: NeighborhoodData[] = [
     slug: 'cow-hollow',
     name: 'Cow Hollow',
     tier: 1,
-    tierLabel: 'Premium',
+    tierLabel: 'Iconic SF',
     avgRent: 3700,
     bullets: [
       'Boutique neighborhood nestled between the Marina and Pacific Heights with a distinct village energy',
@@ -65,7 +65,7 @@ export const NEIGHBORHOODS: NeighborhoodData[] = [
     slug: 'noe-valley',
     name: 'Noe Valley',
     tier: 2,
-    tierLabel: 'Prime',
+    tierLabel: 'Neighborhood Soul',
     avgRent: 3250,
     bullets: [
       'Sunny microclimate and village-like feel make it one of SF\'s most livable neighborhoods',
@@ -78,7 +78,7 @@ export const NEIGHBORHOODS: NeighborhoodData[] = [
     slug: 'hayes-valley',
     name: 'Hayes Valley',
     tier: 2,
-    tierLabel: 'Prime',
+    tierLabel: 'Neighborhood Soul',
     avgRent: 3100,
     bullets: [
       'Arts and culture hub anchored by the SF Symphony and Opera, with some of the city\'s best cocktail bars',
@@ -91,7 +91,7 @@ export const NEIGHBORHOODS: NeighborhoodData[] = [
     slug: 'castro',
     name: 'Castro',
     tier: 2,
-    tierLabel: 'Prime',
+    tierLabel: 'Neighborhood Soul',
     avgRent: 3050,
     bullets: [
       'Historic heart of SF\'s LGBTQ+ community with a lively, walkable main street and strong neighborhood identity',
@@ -104,7 +104,7 @@ export const NEIGHBORHOODS: NeighborhoodData[] = [
     slug: 'mission',
     name: 'Mission District',
     tier: 2,
-    tierLabel: 'Prime',
+    tierLabel: 'Neighborhood Soul',
     avgRent: 3200,
     bullets: [
       'SF\'s cultural melting pot — world-class taquerias, vibrant murals, and one of the city\'s sunniest microclimates',
@@ -117,7 +117,7 @@ export const NEIGHBORHOODS: NeighborhoodData[] = [
     slug: 'soma',
     name: 'SOMA',
     tier: 2,
-    tierLabel: 'Prime',
+    tierLabel: 'Neighborhood Soul',
     avgRent: 3400,
     bullets: [
       'South of Market is SF\'s urban tech and design district — new construction condos and converted warehouse lofts',
@@ -130,7 +130,7 @@ export const NEIGHBORHOODS: NeighborhoodData[] = [
     slug: 'richmond',
     name: 'Inner Richmond',
     tier: 3,
-    tierLabel: 'Value',
+    tierLabel: 'Local Favorite',
     avgRent: 2750,
     bullets: [
       'Quiet, residential neighborhood bordering Golden Gate Park with excellent dim sum and international dining on Clement Street',
@@ -143,7 +143,7 @@ export const NEIGHBORHOODS: NeighborhoodData[] = [
     slug: 'dogpatch',
     name: 'Dogpatch',
     tier: 3,
-    tierLabel: 'Value',
+    tierLabel: 'Local Favorite',
     avgRent: 2900,
     bullets: [
       'Up-and-coming waterfront neighborhood with a growing roster of breweries, galleries, and design studios',
@@ -156,7 +156,7 @@ export const NEIGHBORHOODS: NeighborhoodData[] = [
     slug: 'bernal-heights',
     name: 'Bernal Heights',
     tier: 3,
-    tierLabel: 'Value',
+    tierLabel: 'Local Favorite',
     avgRent: 2850,
     bullets: [
       'Beloved community-focused neighborhood centered around Bernal Hill Park with 360° views of the city',

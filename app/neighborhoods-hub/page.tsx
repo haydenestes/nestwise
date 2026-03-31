@@ -7,9 +7,9 @@ import Link from 'next/link';
 import { NEIGHBORHOODS } from '@/lib/neighborhoodData';
 
 const TIER_STYLE: Record<number, { label: string; color: string; bg: string }> = {
-  1: { label: 'Premium', color: '#c9a84c', bg: 'rgba(201,168,76,0.1)' },
-  2: { label: 'Prime',   color: '#63b3ed', bg: 'rgba(99,179,237,0.08)' },
-  3: { label: 'Value',   color: '#9ad7a3', bg: 'rgba(154,215,163,0.08)' },
+  1: { label: 'Iconic SF',        color: '#c9a84c', bg: 'rgba(201,168,76,0.1)' },
+  2: { label: 'Neighborhood Soul', color: '#63b3ed', bg: 'rgba(99,179,237,0.08)' },
+  3: { label: 'Local Favorite',   color: '#9ad7a3', bg: 'rgba(154,215,163,0.08)' },
 };
 
 export default function NeighborhoodsHub() {
