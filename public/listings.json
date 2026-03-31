@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-31T03:16:29Z",
+  "updated": "2026-03-31T05:20:04Z",
   "listings": [
     {
       "id": "https://gaetanirealestate.appfolio.com/listings/detail/ac1e1ad4-5ac1-4523-b482-e0e340b73cb4",
@@ -283,6 +283,25 @@
         "Under $4k",
         "In-unit laundry",
         "Outdoor space"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7924630674.html",
+      "source": "Craigslist",
+      "title": "Luxury Pacific Heights 1br Condo",
+      "address": "Luxury Pacific Heights 1br Condo",
+      "neighborhood": "Pacific Heights",
+      "rent": 5400,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7924630674.html",
+      "img": "https://images.craigslist.org/00L0L_hZrhqpamuxP_1u8176_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 65,
+      "score_notes": [
+        "Top-tier hood"
       ]
     },
     {
