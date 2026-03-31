@@ -18,14 +18,23 @@ export default function SignUpPage() {
     e.preventDefault();
     setLoading(true);
     setError('');
-    const { error } = await getSupabase().auth.signUp({
-      email,
-      password,
-      options: { data: { full_name: name } },
-    });
-    if (error) { setError(error.message); setLoading(false); return; }
-    // After signup, go to criteria to set preferences, then checkout
-    router.push('/criteria');
+    try {
+      const { data, error } = await getSupabase().auth.signUp({
+        email,
+        password,
+        options: { data: { full_name: name } },
+      });
+      if (error) { setError(error.message); setLoading(false); return; }
+      if (data?.user) {
+        router.push('/criteria');
+      } else {
+        setError('Account created but could not sign in. Please try signing in.');
+        setLoading(false);
+      }
+    } catch (err) {
+      setError('Something went wrong. Please try again.');
+      setLoading(false);
+    }
   }
 
   return (
