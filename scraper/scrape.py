@@ -165,13 +165,20 @@ def scrape_craigslist():
                 price_el = parent.select_one('[class*="price"],.priceinfo') if parent else None
                 rent = parse_rent(price_el.get_text() if price_el else "")
 
-                # Detail page for rent + pet policy
+                # Detail page for rent + pet policy + first image
                 detail_text = title
+                img_url = None
                 if link:
                     try:
                         dr = requests.get(link, headers=HEADERS, timeout=10)
                         detail_text = dr.text[:5000]
                         if rent == 0: rent = parse_rent(detail_text)
+                        # Grab first listing image
+                        detail_soup = BeautifulSoup(dr.text, "lxml")
+                        img_el = (detail_soup.select_one(".gallery-image img, .swipe img, #thumbs img, .slide img, .imgTag") or
+                                  detail_soup.select_one("img[src*='images.craigslist']"))
+                        if img_el:
+                            img_url = img_el.get("src") or img_el.get("data-src")
                         time.sleep(0.4)
                     except Exception: pass
 
@@ -185,6 +192,7 @@ def scrape_craigslist():
                     "title": title, "address": title,
                     "neighborhood": detect_neighborhood(title) or "SF",
                     "rent": rent, "beds": beds, "link": link,
+                    "img": img_url,
                     "pet_policy": detect_pet(detail_text),
                     "parking":    "parking"  in detail_text.lower(),
                     "laundry":    "in-unit"  if re.search(r"in.unit laundry|w/d in unit", detail_text, re.I) else "shared",

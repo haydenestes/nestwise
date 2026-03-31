@@ -182,17 +182,27 @@ function ListingCard({ listing }: { listing: LiveListing }) {
 
   return (
     <div className="listing-card">
-      {/* No image from scraper — show neighborhood placeholder */}
-      <div className="listing-img" style={{
-        background: 'linear-gradient(135deg, #2a1f0e 0%, #4a3520 100%)',
-        display: 'flex', alignItems: 'center', justifyContent: 'center',
-        height: '160px', flexShrink: 0,
-      }}>
-        <div style={{ textAlign: 'center', color: '#c8a96e', fontFamily: 'Cormorant Garamond, Georgia, serif' }}>
-          <div style={{ fontSize: '22px', fontWeight: 600 }}>{listing.neighborhood}</div>
-          <div style={{ fontSize: '13px', opacity: 0.7, marginTop: '4px' }}>{listing.source}</div>
+      {/* Listing image or neighborhood placeholder */}
+      {(listing as LiveListing & { img?: string }).img ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={(listing as LiveListing & { img?: string }).img}
+          alt={listing.address}
+          className="listing-img"
+          style={{ width: '100%', height: '160px', objectFit: 'cover', display: 'block', flexShrink: 0 }}
+        />
+      ) : (
+        <div className="listing-img" style={{
+          background: 'linear-gradient(135deg, #2a1f0e 0%, #4a3520 100%)',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          height: '160px', flexShrink: 0,
+        }}>
+          <div style={{ textAlign: 'center', color: '#c8a96e', fontFamily: 'Cormorant Garamond, Georgia, serif' }}>
+            <div style={{ fontSize: '22px', fontWeight: 600 }}>{listing.neighborhood}</div>
+            <div style={{ fontSize: '13px', opacity: 0.7, marginTop: '4px' }}>{listing.source}</div>
+          </div>
         </div>
-      </div>
+      )}
 
       <div className="listing-body">
         <div className="listing-top">
