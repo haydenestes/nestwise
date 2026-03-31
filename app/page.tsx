@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 const NEIGHBORHOODS = ['Marina', 'Mission', 'Noe Valley', 'SOMA', 'Pacific Heights', 'Hayes Valley'];
 
@@ -293,7 +294,7 @@ export default function LandingPage() {
             <div className="hero-nav-links">
               <a href="#">How it works</a>
               <a href="#">Neighborhoods</a>
-              <a href="/signin" className="hero-signin">Sign in</a>
+              <Link href="/signin" className="hero-signin">Sign in</Link>
             </div>
           </nav>
 
