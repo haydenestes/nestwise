@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-30T23:32:27Z",
+  "updated": "2026-03-31T01:00:29Z",
   "listings": [
     {
       "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-russian-hill-1801/7924594557.html",
@@ -39,6 +39,25 @@
         "Top-tier hood",
         "Under $4k",
         "PM site exclusive \u26a1"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-marina-renovated-top/7924607761.html",
+      "source": "Craigslist",
+      "title": "MARINA - RENOVATED, TOP FLOOR 1BR/1BA in CONVENIENT LOCATION!",
+      "address": "MARINA - RENOVATED, TOP FLOOR 1BR/1BA in CONVENIENT LOCATION!",
+      "neighborhood": "Marina",
+      "rent": 3550,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-marina-renovated-top/7924607761.html",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 75,
+      "score_notes": [
+        "Top-tier hood",
+        "Under $4k"
       ]
     },
     {
@@ -162,6 +181,25 @@
       ]
     },
     {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-bedroom-russian-hill/7924604631.html",
+      "source": "Craigslist",
+      "title": "1 bedroom/Russian Hill/1340Lombard&Polk/W/D in unit/Coming Soon!",
+      "address": "1 bedroom/Russian Hill/1340Lombard&Polk/W/D in unit/Coming Soon!",
+      "neighborhood": "Russian Hill",
+      "rent": 5095,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-bedroom-russian-hill/7924604631.html",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "in-unit",
+      "outdoor": false,
+      "score": 70,
+      "score_notes": [
+        "Top-tier hood",
+        "In-unit laundry"
+      ]
+    },
+    {
       "id": "https://chandlerproperties.com/rental-listings/?lid=92e70ec6-0356-4812-a6c9-2f555355c6a4",
       "source": "Chandler Properties",
       "title": "$4,595 2121 26th Street #201, San Francisco, CA 94107 Availa",
@@ -202,6 +240,42 @@
       ]
     },
     {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-san-francisco-bedroom/7920590322.html",
+      "source": "Craigslist",
+      "title": "San Francisco 2 Bedroom/2 Bathroom Apartment in the Marina",
+      "address": "San Francisco 2 Bedroom/2 Bathroom Apartment in the Marina",
+      "neighborhood": "Marina",
+      "rent": 4995,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-san-francisco-bedroom/7920590322.html",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 65,
+      "score_notes": [
+        "Top-tier hood"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-updated-marina-apartment/7921012230.html",
+      "source": "Craigslist",
+      "title": "Updated Marina Apartment Available",
+      "address": "Updated Marina Apartment Available",
+      "neighborhood": "Marina",
+      "rent": 4295,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-updated-marina-apartment/7921012230.html",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 65,
+      "score_notes": [
+        "Top-tier hood"
+      ]
+    },
+    {
       "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-leased-great-bedroom/7920121854.html",
       "source": "Craigslist",
       "title": "*LEASED* Great 2-bedroom 1-bathroom apartment in Pacific Heights",
@@ -220,21 +294,24 @@
       ]
     },
     {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-charming-renovated-two/7924547152.html",
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-noe-valley-rd-st-city/7924605790.html",
       "source": "Craigslist",
-      "title": "CHARMING RENOVATED TWO BEDROOM COW HOLLOW APT.",
-      "address": "CHARMING RENOVATED TWO BEDROOM COW HOLLOW APT.",
-      "neighborhood": "Cow Hollow",
-      "rent": 4400,
+      "title": "Noe Valley/4475 23rd St./City Views/Balcony/W/D in unit/Available Now!",
+      "address": "Noe Valley/4475 23rd St./City Views/Balcony/W/D in unit/Available Now!",
+      "neighborhood": "Noe Valley",
+      "rent": 4145,
       "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-charming-renovated-two/7924547152.html",
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-noe-valley-rd-st-city/7924605790.html",
       "pet_policy": "unknown",
-      "parking": false,
-      "laundry": "shared",
-      "outdoor": false,
-      "score": 65,
+      "parking": true,
+      "laundry": "in-unit",
+      "outdoor": true,
+      "score": 63,
       "score_notes": [
-        "Top-tier hood"
+        "Mid-tier hood",
+        "Parking",
+        "In-unit laundry",
+        "Outdoor space"
       ]
     },
     {
@@ -295,14 +372,14 @@
       ]
     },
     {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-noe-valley-rd-st-city/7924594617.html",
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-noe-valley-630/7924604810.html",
       "source": "Craigslist",
-      "title": "Noe Valley/4475 23rd St./City Views/Balcony/W/D in unit/Coming Soon!!!",
-      "address": "Noe Valley/4475 23rd St./City Views/Balcony/W/D in unit/Coming Soon!!!",
+      "title": "Noe Valley/630 Alvarado&Castro/balcony/W/D in unit/Coming Soon!!",
+      "address": "Noe Valley/630 Alvarado&Castro/balcony/W/D in unit/Coming Soon!!",
       "neighborhood": "Noe Valley",
       "rent": 4195,
       "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-noe-valley-rd-st-city/7924594617.html",
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-noe-valley-630/7924604810.html",
       "pet_policy": "unknown",
       "parking": false,
       "laundry": "in-unit",
@@ -334,21 +411,24 @@
       ]
     },
     {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-classic-1br-prime-nob/7924518174.html",
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-inner-richmond/7924606195.html",
       "source": "Craigslist",
-      "title": "Classic 1BR \u2013 Prime Nob Hill Location! Unit #1340-003",
-      "address": "Classic 1BR \u2013 Prime Nob Hill Location! Unit #1340-003",
-      "neighborhood": "Nob Hill",
-      "rent": 4345,
+      "title": "Inner Richmond/175 21stAve&California/Balcony/W/D in unit/Coming soon!",
+      "address": "Inner Richmond/175 21stAve&California/Balcony/W/D in unit/Coming soon!",
+      "neighborhood": "Inner Richmond",
+      "rent": 3795,
       "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-classic-1br-prime-nob/7924518174.html",
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-inner-richmond/7924606195.html",
       "pet_policy": "unknown",
       "parking": false,
-      "laundry": "shared",
-      "outdoor": false,
-      "score": 50,
+      "laundry": "in-unit",
+      "outdoor": true,
+      "score": 53,
       "score_notes": [
-        "Mid-tier hood"
+        "Value hood",
+        "Under $4k",
+        "In-unit laundry",
+        "Outdoor space"
       ]
     },
     {
@@ -368,6 +448,26 @@
       "score_notes": [
         "Mid-tier hood",
         "PM site exclusive \u26a1"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-inner-richmond-st/7924606257.html",
+      "source": "Craigslist",
+      "title": "Inner Richmond/175 21st Ave&California/Balcony/Remodeled/Coming soon!",
+      "address": "Inner Richmond/175 21st Ave&California/Balcony/Remodeled/Coming soon!",
+      "neighborhood": "Inner Richmond",
+      "rent": 3595,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-inner-richmond-st/7924606257.html",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": true,
+      "score": 48,
+      "score_notes": [
+        "Value hood",
+        "Under $4k",
+        "Outdoor space"
       ]
     }
   ]
