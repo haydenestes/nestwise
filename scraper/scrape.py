@@ -35,9 +35,12 @@ CRITERIA = {
         "dolores heights",
         "fillmore",
     ],
-    "dog_friendly":  ["dogs ok", "dog ok", "pets ok", "pet friendly", "dogs allowed",
-                      "small dogs", "dogs welcome", "pets welcome", "dog friendly"],
-    "dog_hostile":   ["no pets", "no dogs", "no animals", "pets not allowed"],
+    "pet_friendly":  ["dogs ok", "dog ok", "cats ok", "cat ok", "pets ok", "pet friendly",
+                      "dogs allowed", "cats allowed", "pets allowed", "small dogs",
+                      "dogs welcome", "cats welcome", "pets welcome", "dog friendly",
+                      "cat friendly", "pet friendly", "small pets"],
+    "pet_hostile":   ["no pets", "no dogs", "no cats", "no animals", "pets not allowed",
+                      "no pets allowed"],
 }
 
 EMAIL_FROM = "finnigenhart@gmail.com"
@@ -76,8 +79,8 @@ def in_target(text):
 
 def detect_pet(text):
     t = text.lower()
-    if any(k in t for k in CRITERIA["dog_hostile"]):  return "no_pets"
-    if any(k in t for k in CRITERIA["dog_friendly"]): return "dogs_ok"
+    if any(k in t for k in CRITERIA["pet_hostile"]):  return "no_pets"
+    if any(k in t for k in CRITERIA["pet_friendly"]): return "pets_ok"
     return "unknown"
 
 def parse_rent(text):
@@ -99,7 +102,7 @@ def score_listing(l):
     elif rent > CRITERIA["max_rent"]: s -= 20
 
     pet = l.get("pet_policy","unknown")
-    if pet == "dogs_ok":  s += 20; notes.append("🐕 Dogs OK")
+    if pet == "pets_ok":  s += 20; notes.append("🐾 Pets OK")
     elif pet == "no_pets":s -= 30; notes.append("No pets ✗")
 
     if l.get("beds", 0) >= 2: s += 10; notes.append("2+ BR")
@@ -173,12 +176,14 @@ def scrape_craigslist():
                         dr = requests.get(link, headers=HEADERS, timeout=10)
                         detail_text = dr.text[:5000]
                         if rent == 0: rent = parse_rent(detail_text)
-                        # Grab first listing image
+                        # Grab first listing image — only from images.craigslist.org (trusted source)
                         detail_soup = BeautifulSoup(dr.text, "lxml")
-                        img_el = (detail_soup.select_one(".gallery-image img, .swipe img, #thumbs img, .slide img, .imgTag") or
-                                  detail_soup.select_one("img[src*='images.craigslist']"))
+                        img_el = detail_soup.select_one("img[src*='images.craigslist.org']")
                         if img_el:
-                            img_url = img_el.get("src") or img_el.get("data-src")
+                            candidate = img_el.get("src") or img_el.get("data-src")
+                            # Only use if it's a real craigslist image URL
+                            if candidate and "images.craigslist.org" in candidate:
+                                img_url = candidate
                         time.sleep(0.4)
                     except Exception: pass
 
@@ -352,7 +357,7 @@ def scrape_gaetani():
 # ── Email ─────────────────────────────────────────────────────────────────────
 def listing_html(l):
     pet_badge = {
-        "dogs_ok": '<span style="color:#2d7a2d;font-weight:600">🐕 Dogs OK</span>',
+        "pets_ok": '<span style="color:#2d7a2d;font-weight:600">🐾 Pets OK</span>',
         "no_pets": '<span style="color:#cc0000;font-weight:600">✗ No pets</span>',
         "unknown": '<span style="color:#999">Pet policy TBD</span>',
     }.get(l.get("pet_policy","unknown"), "")

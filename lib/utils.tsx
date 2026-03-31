@@ -10,11 +10,14 @@ export function scoreColor(score: number): string {
 }
 
 export function petTag(policy: string): JSX.Element {
-  if (policy === 'dogs_ok') {
-    return <span className="tag tag-green">🐕 Dogs OK</span>;
+  if (policy === 'dogs_ok' || policy === 'pets_ok') {
+    return <span className="tag tag-green">🐾 Pets OK</span>;
   }
   if (policy === 'verify') {
     return <span className="tag tag-amber">Verify pets</span>;
+  }
+  if (policy === 'unknown') {
+    return <span className="tag tag-amber">Pet policy TBD</span>;
   }
   return <span className="tag tag-red">No pets</span>;
 }

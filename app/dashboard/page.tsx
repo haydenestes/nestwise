@@ -176,7 +176,8 @@ export default function DashboardPage() {
 }
 
 function ListingCard({ listing }: { listing: LiveListing }) {
-  const petPolicy = listing.pet_policy === 'dogs_ok' ? 'dogs_ok'
+  const petPolicy = listing.pet_policy === 'pets_ok' ? 'dogs_ok'  // reuse dogs_ok style
+                  : listing.pet_policy === 'dogs_ok' ? 'dogs_ok'
                   : listing.pet_policy === 'no_pets' ? 'no_pets'
                   : 'unknown';
 
