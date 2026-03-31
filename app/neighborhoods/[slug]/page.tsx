@@ -3,23 +3,13 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
-export async function generateStaticParams() {
-  return NEIGHBORHOODS.map(n => ({ slug: n.slug }));
-}
+// Dynamic rendering — no static generation to avoid build timeouts
+export const dynamic = 'force-dynamic';
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const hood = getNeighborhood(params.slug);
-  if (!hood) return {};
-  return {
-    title: `${hood.name} Apartments for Rent SF | Nestwise`,
-    description: `Find ${hood.name} apartments in San Francisco before anyone else. Nestwise scans every listing in real time.`,
-    openGraph: {
-      title: `${hood.name} Apartments for Rent | Nestwise`,
-      description: `Browse ${hood.name} rentals in SF — filtered, scored, and surfaced before they hit Zillow.`,
-      url: `https://nestwise-sf.vercel.app/neighborhoods/${params.slug}`,
-    },
-  };
-}
+export const metadata: Metadata = {
+  title: 'SF Neighborhood Apartments | Nestwise',
+  description: 'Find San Francisco apartments by neighborhood before anyone else.',
+};
 
 const TIER_COLORS: Record<number, { bg: string; color: string; label: string }> = {
   1: { bg: 'rgba(201,168,76,0.12)', color: '#c9a84c', label: 'Tier 1 · Premium' },
