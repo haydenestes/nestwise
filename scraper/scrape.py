@@ -323,35 +323,68 @@ def scrape_wavro():
     return listings
 
 
-def scrape_gaetani():
+def scrape_appfolio(subdomain: str, source_name: str):
+    """Generic scraper for AppFolio-based property managers."""
     listings = []
-    # Gaetani uses AppFolio
-    url = "https://gaetanirealestate.appfolio.com/listings"
+    base_url = f"https://{subdomain}.appfolio.com"
+    url = f"{base_url}/listings"
     try:
         resp = requests.get(url, headers=HEADERS, timeout=15)
         soup = BeautifulSoup(resp.text, "lxml")
-        for card in soup.select(".listingItem, .listing-item, [class*='listing']")[:20]:
+        for card in soup.select(".listing-item, .js-listing-item, [data-url]")[:30]:
             text = card.get_text(" ", strip=True)
             rent = parse_rent(text)
             if not (CRITERIA["min_rent"] <= rent <= CRITERIA["max_rent"]): continue
-            link_el = card.select_one("a[href]")
-            link = link_el["href"] if link_el else url
-            if link.startswith("/"): link = "https://gaetanirealestate.appfolio.com" + link
-            beds_m = re.search(r'(\d+)\s*[Bb]ed', text)
-            beds = int(beds_m.group(1)) if beds_m else 1
+
+            # Get detail link
+            href = card.get("data-url") or ""
+            if not href:
+                link_el = card.select_one("a[href]")
+                href = link_el["href"] if link_el else ""
+            link = (base_url + href) if href.startswith("/") else href
+            if not link: link = url
+
+            # Fetch detail page for neighborhood + pet policy
+            detail_text = text
+            if link and link != url:
+                try:
+                    dr = requests.get(link, headers=HEADERS, timeout=10)
+                    detail_text = dr.text[:4000]
+                    time.sleep(0.3)
+                except Exception:
+                    pass
+
+            if not in_target(detail_text + " " + text):
+                continue
+
+            beds_m = re.search(r'(\d+)\s*[Bb][Dd]', text)
+            beds = int(beds_m.group(1)) if beds_m else (0 if re.search(r'[Ss]tudio', text) else 1)
+
+            # Address from AppFolio detail page
+            addr_m = re.search(r'(\d+\s+[A-Z][^,\n]{3,40}(?:St|Ave|Blvd|Dr|Rd|Way|Ln|Place|Pl)\.?)', detail_text)
+            address = addr_m.group(1).strip() if addr_m else text[:60]
+
             listings.append({
-                "id": link, "source": "Gaetani Real Estate",
-                "title": text[:80], "address": text[:60],
-                "neighborhood": detect_neighborhood(text) or "SF",
+                "id": link, "source": source_name,
+                "title": address, "address": address,
+                "neighborhood": detect_neighborhood(detail_text + " " + text) or "SF",
                 "rent": rent, "beds": beds, "link": link,
-                "pet_policy": detect_pet(text),
-                "parking": "parking" in text.lower(),
-                "laundry": "in-unit" if re.search(r"in.unit|w/d", text, re.I) else "shared",
-                "outdoor": any(k in text.lower() for k in ["deck","patio","yard","balcony"]),
+                "pet_policy": detect_pet(detail_text + " " + text),
+                "parking": "parking" in (detail_text + text).lower(),
+                "laundry": "in-unit" if re.search(r"in.unit|w/d", detail_text + text, re.I) else "shared",
+                "outdoor": any(k in (detail_text + text).lower() for k in ["deck","patio","yard","balcony"]),
             })
     except Exception as e:
-        print(f"[Gaetani] Error: {e}")
+        print(f"[{source_name}] Error: {e}")
     return listings
+
+
+def scrape_gaetani():
+    return scrape_appfolio("gaetanirealestate", "Gaetani Real Estate")
+
+
+def scrape_wcpm():
+    return scrape_appfolio("wcpm", "WCPM")
 
 
 # ── Email ─────────────────────────────────────────────────────────────────────
@@ -452,6 +485,7 @@ if __name__ == "__main__":
         (scrape_relisto,    "ReLISTO"),
         (scrape_wavro,      "J. Wavro"),
         (scrape_gaetani,    "Gaetani"),
+        (scrape_wcpm,       "WCPM"),
     ]:
         results = fn()
         raw += results
