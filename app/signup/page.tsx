@@ -4,6 +4,7 @@ export const dynamic = 'force-dynamic';
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { getSupabase } from '@/lib/supabase';
 
 export default function SignUpPage() {
@@ -97,7 +98,10 @@ export default function SignUpPage() {
             </button>
           </form>
           <div className="auth-terms">
-            By creating an account you agree to our Terms of Service and Privacy Policy.
+            By creating an account you agree to our{' '}
+            <Link href="/terms" style={{ color: '#c9a84c', textDecoration: 'none' }}>Terms of Service</Link>
+            {' '}and{' '}
+            <Link href="/privacy" style={{ color: '#c9a84c', textDecoration: 'none' }}>Privacy Policy</Link>.
           </div>
           <div className="auth-footer">
             Already have an account?{' '}
