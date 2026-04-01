@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-01T03:07:44Z",
+  "updated": "2026-04-01T07:21:21Z",
   "listings": [
     {
       "id": "https://gaetanirealestate.appfolio.com/listings/detail/ac1e1ad4-5ac1-4523-b482-e0e340b73cb4",
@@ -41,6 +41,26 @@
         "Top-tier hood",
         "Under $4k",
         "PM site exclusive \u26a1"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-best-marina-loctop-floor/7924865368.html",
+      "source": "Craigslist",
+      "title": "Best Marina Loc!TOP Floor-HUGE-Rec Remodel-VIDEO-Charm-Walk in Shower-",
+      "address": "Best Marina Loc!TOP Floor-HUGE-Rec Remodel-VIDEO-Charm-Walk in Shower-",
+      "neighborhood": "Marina",
+      "rent": 3950,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-best-marina-loctop-floor/7924865368.html",
+      "img": "https://images.craigslist.org/00p0p_jdxdVPxISkk_0t20CI_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 75,
+      "score_notes": [
+        "Top-tier hood",
+        "Under $4k"
       ]
     },
     {
@@ -184,6 +204,26 @@
       ]
     },
     {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-marina-style-single/7924867364.html",
+      "source": "Craigslist",
+      "title": "Marina-Style Single Family Classic (sf) 2BR/2BA with 2-Car Garage",
+      "address": "Marina-Style Single Family Classic (sf) 2BR/2BA with 2-Car Garage",
+      "neighborhood": "Marina",
+      "rent": 4400,
+      "beds": 2,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-marina-style-single/7924867364.html",
+      "img": "https://images.craigslist.org/00909_6vSQGzApmi0_08k06f_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 70,
+      "score_notes": [
+        "Top-tier hood",
+        "2+ BR"
+      ]
+    },
+    {
       "id": "https://chandlerproperties.com/rental-listings/?lid=92e70ec6-0356-4812-a6c9-2f555355c6a4",
       "source": "Chandler Properties",
       "title": "$4,595 2121 26th Street #201, San Francisco, CA 94107 Availa",
@@ -200,6 +240,25 @@
       "score_notes": [
         "Top-tier hood",
         "PM site exclusive \u26a1"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7924300055.html",
+      "source": "Craigslist",
+      "title": "Luxury Pacific Heights 1br Condo",
+      "address": "Luxury Pacific Heights 1br Condo",
+      "neighborhood": "Pacific Heights",
+      "rent": 5400,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7924300055.html",
+      "img": "https://images.craigslist.org/00a0a_4nTVKArQoNI_1761u8_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 65,
+      "score_notes": [
+        "Top-tier hood"
       ]
     },
     {
