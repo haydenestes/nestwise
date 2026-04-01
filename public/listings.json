@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-01T17:09:05Z",
+  "updated": "2026-04-01T19:44:45Z",
   "listings": [
     {
       "id": "https://gaetanirealestate.appfolio.com/listings/detail/ac1e1ad4-5ac1-4523-b482-e0e340b73cb4",
@@ -20,6 +20,27 @@
         "Under $4k",
         "\ud83d\udc3e Pets OK",
         "Parking",
+        "PM site exclusive \u26a1"
+      ]
+    },
+    {
+      "id": "https://gaetanirealestate.appfolio.com/listings/detail/01973f68-1843-4195-a6b4-ada14fe7d320",
+      "source": "Gaetani Real Estate",
+      "title": "1560 Sacramento St",
+      "address": "1560 Sacramento St",
+      "neighborhood": "Nob Hill",
+      "rent": 3595,
+      "beds": 1,
+      "link": "https://gaetanirealestate.appfolio.com/listings/detail/01973f68-1843-4195-a6b4-ada14fe7d320",
+      "pet_policy": "pets_ok",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 85,
+      "score_notes": [
+        "Mid-tier hood",
+        "Under $4k",
+        "\ud83d\udc3e Pets OK",
         "PM site exclusive \u26a1"
       ]
     },
@@ -223,15 +244,15 @@
       ]
     },
     {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7924300055.html",
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7924460929.html",
       "source": "Craigslist",
       "title": "Luxury Pacific Heights 1br Condo",
       "address": "Luxury Pacific Heights 1br Condo",
       "neighborhood": "Pacific Heights",
       "rent": 5400,
       "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7924300055.html",
-      "img": "https://images.craigslist.org/00a0a_4nTVKArQoNI_1761u8_600x450.jpg",
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7924460929.html",
+      "img": "https://images.craigslist.org/00e0e_kEgZvOZVgES_1761u8_600x450.jpg",
       "pet_policy": "unknown",
       "parking": false,
       "laundry": "shared",
