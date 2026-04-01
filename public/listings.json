@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-31T21:02:05Z",
+  "updated": "2026-04-01T03:07:44Z",
   "listings": [
     {
       "id": "https://gaetanirealestate.appfolio.com/listings/detail/ac1e1ad4-5ac1-4523-b482-e0e340b73cb4",
@@ -7,7 +7,7 @@
       "title": "801 Fillmore St",
       "address": "801 Fillmore St",
       "neighborhood": "Fillmore",
-      "rent": 3795,
+      "rent": 3695,
       "beds": 1,
       "link": "https://gaetanirealestate.appfolio.com/listings/detail/ac1e1ad4-5ac1-4523-b482-e0e340b73cb4",
       "pet_policy": "pets_ok",
@@ -21,27 +21,6 @@
         "\ud83d\udc3e Pets OK",
         "Parking",
         "PM site exclusive \u26a1"
-      ]
-    },
-    {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-top-floor-1bd-in-nob-hill/7920831416.html",
-      "source": "Craigslist",
-      "title": "Top-Floor 1BD in Nob Hill \u2013 Dishwasher & Small Pets Welcome",
-      "address": "Top-Floor 1BD in Nob Hill \u2013 Dishwasher & Small Pets Welcome",
-      "neighborhood": "Nob Hill",
-      "rent": 3695,
-      "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-top-floor-1bd-in-nob-hill/7920831416.html",
-      "img": "https://images.craigslist.org/00R0R_gaPcKIaK8NR_0CI0lM_600x450.jpg",
-      "pet_policy": "pets_ok",
-      "parking": false,
-      "laundry": "shared",
-      "outdoor": false,
-      "score": 80,
-      "score_notes": [
-        "Mid-tier hood",
-        "Under $4k",
-        "\ud83d\udc3e Pets OK"
       ]
     },
     {
@@ -65,23 +44,23 @@
       ]
     },
     {
-      "id": "https://gaetanirealestate.appfolio.com/listings/detail/21b00564-edd5-420d-a3f0-a6b21471bf09",
-      "source": "Gaetani Real Estate",
-      "title": "2765 Gough St.",
-      "address": "2765 Gough St.",
-      "neighborhood": "Marina",
-      "rent": 3895,
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-bright-1br-with/7924843619.html",
+      "source": "Craigslist",
+      "title": "Bright 1BR with Dishwasher in Prime Pacific Heights / Japantown",
+      "address": "Bright 1BR with Dishwasher in Prime Pacific Heights / Japantown",
+      "neighborhood": "Pacific Heights",
+      "rent": 3695,
       "beds": 1,
-      "link": "https://gaetanirealestate.appfolio.com/listings/detail/21b00564-edd5-420d-a3f0-a6b21471bf09",
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-bright-1br-with/7924843619.html",
+      "img": "https://images.craigslist.org/00i0i_3M90YWkfeIJ_0CI0lM_600x450.jpg",
       "pet_policy": "unknown",
       "parking": false,
       "laundry": "shared",
       "outdoor": false,
-      "score": 80,
+      "score": 75,
       "score_notes": [
         "Top-tier hood",
-        "Under $4k",
-        "PM site exclusive \u26a1"
+        "Under $4k"
       ]
     },
     {
@@ -185,43 +164,23 @@
       ]
     },
     {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-russian-hill-junior-bed/7924759889.html",
-      "source": "Craigslist",
-      "title": "Russian Hill  Junior 1 Bed Condo with Parking and Storage ~ J.Wavro",
-      "address": "Russian Hill  Junior 1 Bed Condo with Parking and Storage ~ J.Wavro",
+      "id": "wavro-4500-$4,500/mo Russian Hi",
+      "source": "J. Wavro Associates",
+      "title": "$4,500/mo Russian Hill Russian Hill  Junior 1 Bed Condo with Parking and Storage",
+      "address": "$4,500/mo Russian Hill Russian Hill  Junior 1 Bed Condo with Parking and Storage",
       "neighborhood": "Russian Hill",
       "rent": 4500,
       "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-russian-hill-junior-bed/7924759889.html",
-      "img": "https://images.craigslist.org/00x0x_debLwf4Ps06_0ew08B_600x450.jpg",
+      "link": "https://www.jwavro.com/rental_list.php?hood=San+Francisco",
       "pet_policy": "unknown",
       "parking": true,
       "laundry": "shared",
       "outdoor": false,
-      "score": 70,
+      "score": 75,
       "score_notes": [
         "Top-tier hood",
-        "Parking"
-      ]
-    },
-    {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-one-rincon-hill-bd-ba/7924745456.html",
-      "source": "Craigslist",
-      "title": "ONE RINCON HILL | 1 BD / 1 BA With Full Marina and Bay Bridge Views",
-      "address": "ONE RINCON HILL | 1 BD / 1 BA With Full Marina and Bay Bridge Views",
-      "neighborhood": "Marina",
-      "rent": 5490,
-      "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-one-rincon-hill-bd-ba/7924745456.html",
-      "img": "https://images.craigslist.org/01717_8HonhJzOKN7_0x20m1_600x450.jpg",
-      "pet_policy": "unknown",
-      "parking": true,
-      "laundry": "shared",
-      "outdoor": false,
-      "score": 70,
-      "score_notes": [
-        "Top-tier hood",
-        "Parking"
+        "Parking",
+        "PM site exclusive \u26a1"
       ]
     },
     {
@@ -241,25 +200,6 @@
       "score_notes": [
         "Top-tier hood",
         "PM site exclusive \u26a1"
-      ]
-    },
-    {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7924715338.html",
-      "source": "Craigslist",
-      "title": "Luxury Pacific Heights 1br Condo",
-      "address": "Luxury Pacific Heights 1br Condo",
-      "neighborhood": "Pacific Heights",
-      "rent": 5400,
-      "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7924715338.html",
-      "img": "https://images.craigslist.org/00L0L_hZrhqpamuxP_1u8176_600x450.jpg",
-      "pet_policy": "unknown",
-      "parking": false,
-      "laundry": "shared",
-      "outdoor": false,
-      "score": 65,
-      "score_notes": [
-        "Top-tier hood"
       ]
     },
     {
@@ -283,22 +223,44 @@
       ]
     },
     {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-tmlp-13-mo-landmark/7924754924.html",
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-remodeled-nob-hill-2br/7924392751.html",
       "source": "Craigslist",
-      "title": "TMLP 13-mo. | Landmark Living in the Arts District, Near Hayes Valley.",
-      "address": "TMLP 13-mo. | Landmark Living in the Arts District, Near Hayes Valley.",
-      "neighborhood": "Hayes Valley",
-      "rent": 4127,
-      "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-tmlp-13-mo-landmark/7924754924.html",
-      "img": "https://images.craigslist.org/00n0n_6R1BUozJm7M_0fk07q_600x450.jpg",
+      "title": "Remodeled Nob Hill 2BR (Option 3BR) \u2013 In-Unit Laundry & Dishwasher, Pe",
+      "address": "Remodeled Nob Hill 2BR (Option 3BR) \u2013 In-Unit Laundry & Dishwasher, Pe",
+      "neighborhood": "Nob Hill",
+      "rent": 5295,
+      "beds": 2,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-remodeled-nob-hill-2br/7924392751.html",
+      "img": "https://images.craigslist.org/00k0k_lq51859HwmI_0CI0lM_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "in-unit",
+      "outdoor": false,
+      "score": 60,
+      "score_notes": [
+        "Mid-tier hood",
+        "2+ BR",
+        "In-unit laundry"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-charming-2br-flat-in/7924392646.html",
+      "source": "Craigslist",
+      "title": "Charming 2BR Flat in Prime Noe Valley with Views",
+      "address": "Charming 2BR Flat in Prime Noe Valley with Views",
+      "neighborhood": "Noe Valley",
+      "rent": 4795,
+      "beds": 2,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-charming-2br-flat-in/7924392646.html",
+      "img": "https://images.craigslist.org/00d0d_h6SSOPDHYEd_0CI0lM_600x450.jpg",
       "pet_policy": "unknown",
       "parking": false,
       "laundry": "shared",
       "outdoor": false,
-      "score": 50,
+      "score": 55,
       "score_notes": [
-        "Mid-tier hood"
+        "Mid-tier hood",
+        "2+ BR"
       ]
     },
     {
@@ -318,27 +280,6 @@
       "score_notes": [
         "Mid-tier hood",
         "PM site exclusive \u26a1"
-      ]
-    },
-    {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-spacious-2br-2ba-with-in/7921280205.html",
-      "source": "Craigslist",
-      "title": "Spacious 2BR / 2BA with In-Unit Laundry in the Inner Richmond",
-      "address": "Spacious 2BR / 2BA with In-Unit Laundry in the Inner Richmond",
-      "neighborhood": "Inner Richmond",
-      "rent": 4795,
-      "beds": 2,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-spacious-2br-2ba-with-in/7921280205.html",
-      "img": "https://images.craigslist.org/00101_cIJR6qUdgn_0CI0lM_600x450.jpg",
-      "pet_policy": "unknown",
-      "parking": false,
-      "laundry": "in-unit",
-      "outdoor": false,
-      "score": 45,
-      "score_notes": [
-        "Value hood",
-        "2+ BR",
-        "In-unit laundry"
       ]
     }
   ]
