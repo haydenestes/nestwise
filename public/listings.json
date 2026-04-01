@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-01T07:21:21Z",
+  "updated": "2026-04-01T17:09:05Z",
   "listings": [
     {
       "id": "https://gaetanirealestate.appfolio.com/listings/detail/ac1e1ad4-5ac1-4523-b482-e0e340b73cb4",
@@ -20,26 +20,6 @@
         "Under $4k",
         "\ud83d\udc3e Pets OK",
         "Parking",
-        "PM site exclusive \u26a1"
-      ]
-    },
-    {
-      "id": "https://chandlerproperties.com/rental-listings/?lid=fd52d675-cc47-470f-ab57-d3d5b411efff",
-      "source": "Chandler Properties",
-      "title": "1845 Green Street, #",
-      "address": "1845 Green Street, #",
-      "neighborhood": "Pacific Heights",
-      "rent": 3895,
-      "beds": 1,
-      "link": "https://chandlerproperties.com/rental-listings/?lid=fd52d675-cc47-470f-ab57-d3d5b411efff",
-      "pet_policy": "unknown",
-      "parking": false,
-      "laundry": "shared",
-      "outdoor": false,
-      "score": 80,
-      "score_notes": [
-        "Top-tier hood",
-        "Under $4k",
         "PM site exclusive \u26a1"
       ]
     },
@@ -282,6 +262,26 @@
       ]
     },
     {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-remodeled-bedroom-in-nob/7924948203.html",
+      "source": "Craigslist",
+      "title": "Remodeled 1 bedroom in Nob Hill!",
+      "address": "Remodeled 1 bedroom in Nob Hill!",
+      "neighborhood": "Nob Hill",
+      "rent": 3895,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-remodeled-bedroom-in-nob/7924948203.html",
+      "img": "https://images.craigslist.org/00t0t_3L5tvavcZ3F_0aK07a_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 60,
+      "score_notes": [
+        "Mid-tier hood",
+        "Under $4k"
+      ]
+    },
+    {
       "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-remodeled-nob-hill-2br/7924392751.html",
       "source": "Craigslist",
       "title": "Remodeled Nob Hill 2BR (Option 3BR) \u2013 In-Unit Laundry & Dishwasher, Pe",
@@ -320,6 +320,25 @@
       "score_notes": [
         "Mid-tier hood",
         "2+ BR"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-bright-bedroom-bathroom/7921349703.html",
+      "source": "Craigslist",
+      "title": "Bright 2 Bedroom / 2 Bathroom Apartment in Prime Nob Hill Location",
+      "address": "Bright 2 Bedroom / 2 Bathroom Apartment in Prime Nob Hill Location",
+      "neighborhood": "Nob Hill",
+      "rent": 5495,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-bright-bedroom-bathroom/7921349703.html",
+      "img": "https://images.craigslist.org/00k0k_g19J09Q6ni4_0CI0lM_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 50,
+      "score_notes": [
+        "Mid-tier hood"
       ]
     },
     {
