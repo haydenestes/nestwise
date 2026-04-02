@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-02T04:14:07Z",
+  "updated": "2026-04-02T06:12:07Z",
   "listings": [
     {
       "id": "https://gaetanirealestate.appfolio.com/listings/detail/ac1e1ad4-5ac1-4523-b482-e0e340b73cb4",
@@ -182,6 +182,26 @@
         "Top-tier hood",
         "Parking",
         "PM site exclusive \u26a1"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-pre-market-may-move-in/7925091492.html",
+      "source": "Craigslist",
+      "title": "PRE-MARKET ~ MAY MOVE-IN ~ GORGEOUS PACIFIC HEIGHTS 1BD 1BA ~ W/D IN UNIT",
+      "address": "PRE-MARKET ~ MAY MOVE-IN ~ GORGEOUS PACIFIC HEIGHTS 1BD 1BA ~ W/D IN UNIT",
+      "neighborhood": "Pacific Heights",
+      "rent": 4495,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-pre-market-may-move-in/7925091492.html",
+      "img": "https://images.craigslist.org/00505_8P7FjMMrayR_0CI0pO_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "in-unit",
+      "outdoor": false,
+      "score": 70,
+      "score_notes": [
+        "Top-tier hood",
+        "In-unit laundry"
       ]
     },
     {
