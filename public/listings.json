@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-02T06:12:07Z",
+  "updated": "2026-04-02T08:13:46Z",
   "listings": [
     {
       "id": "https://gaetanirealestate.appfolio.com/listings/detail/ac1e1ad4-5ac1-4523-b482-e0e340b73cb4",
@@ -221,6 +221,26 @@
       "score_notes": [
         "Top-tier hood",
         "PM site exclusive \u26a1"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-spectacular-bedroom/7925096304.html",
+      "source": "Craigslist",
+      "title": "Spectacular 2 bedroom, 2 bathroom Russian Hill co-op apartment",
+      "address": "Spectacular 2 bedroom, 2 bathroom Russian Hill co-op apartment",
+      "neighborhood": "Russian Hill",
+      "rent": 4600,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-spectacular-bedroom/7925096304.html",
+      "img": "https://images.craigslist.org/01616_eLsDpge9Haz_0kE0dL_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": true,
+      "score": 68,
+      "score_notes": [
+        "Top-tier hood",
+        "Outdoor space"
       ]
     },
     {
