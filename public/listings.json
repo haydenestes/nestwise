@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-02T08:13:46Z",
+  "updated": "2026-04-02T14:42:43Z",
   "listings": [
     {
       "id": "https://gaetanirealestate.appfolio.com/listings/detail/ac1e1ad4-5ac1-4523-b482-e0e340b73cb4",
@@ -42,6 +42,27 @@
         "Under $4k",
         "\ud83d\udc3e Pets OK",
         "PM site exclusive \u26a1"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-russian-hill-1801/7925121248.html",
+      "source": "Craigslist",
+      "title": "Russian Hill/1801 leavenworth&Vallejo/W/D in unit/Coming Soon!!",
+      "address": "Russian Hill/1801 leavenworth&Vallejo/W/D in unit/Coming Soon!!",
+      "neighborhood": "Russian Hill",
+      "rent": 3995,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-russian-hill-1801/7925121248.html",
+      "img": "https://images.craigslist.org/00q0q_h1OqCkO04RP_0cT08B_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "in-unit",
+      "outdoor": false,
+      "score": 80,
+      "score_notes": [
+        "Top-tier hood",
+        "Under $4k",
+        "In-unit laundry"
       ]
     },
     {
@@ -185,6 +206,47 @@
       ]
     },
     {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-pacific-heights-renovated/7925134449.html",
+      "source": "Craigslist",
+      "title": "Pacific Heights Renovated 1BR/1BA Corner Unit Garage & In-Unit Laundry",
+      "address": "Pacific Heights Renovated 1BR/1BA Corner Unit Garage & In-Unit Laundry",
+      "neighborhood": "Pacific Heights",
+      "rent": 4200,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-pacific-heights-renovated/7925134449.html",
+      "img": "https://images.craigslist.org/00t0t_a0r4kiF1qDB_08k06f_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "in-unit",
+      "outdoor": true,
+      "score": 73,
+      "score_notes": [
+        "Top-tier hood",
+        "In-unit laundry",
+        "Outdoor space"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-coming-soon-marina-2620/7925129214.html",
+      "source": "Craigslist",
+      "title": "Coming soon/Marina/2620 Laguna /W/D in unit/Great views!!!!",
+      "address": "Coming soon/Marina/2620 Laguna /W/D in unit/Great views!!!!",
+      "neighborhood": "Marina",
+      "rent": 4495,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-coming-soon-marina-2620/7925129214.html",
+      "img": "https://images.craigslist.org/01616_eTvuKTfKVK_09G06s_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "in-unit",
+      "outdoor": false,
+      "score": 70,
+      "score_notes": [
+        "Top-tier hood",
+        "In-unit laundry"
+      ]
+    },
+    {
       "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-pre-market-may-move-in/7925091492.html",
       "source": "Craigslist",
       "title": "PRE-MARKET ~ MAY MOVE-IN ~ GORGEOUS PACIFIC HEIGHTS 1BD 1BA ~ W/D IN UNIT",
@@ -221,6 +283,28 @@
       "score_notes": [
         "Top-tier hood",
         "PM site exclusive \u26a1"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-lower-nob-hill/7925120889.html",
+      "source": "Craigslist",
+      "title": "/Lower Nob Hill/1035Sutter&Hyde/W/D in unit/Coming Soon!!",
+      "address": "/Lower Nob Hill/1035Sutter&Hyde/W/D in unit/Coming Soon!!",
+      "neighborhood": "Nob Hill",
+      "rent": 3545,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-lower-nob-hill/7925120889.html",
+      "img": "https://images.craigslist.org/00D0D_mfV1GnjMt4_09G06s_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "in-unit",
+      "outdoor": true,
+      "score": 68,
+      "score_notes": [
+        "Mid-tier hood",
+        "Under $4k",
+        "In-unit laundry",
+        "Outdoor space"
       ]
     },
     {
@@ -302,6 +386,28 @@
       ]
     },
     {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-noe-valley-rd-st-city/7925122560.html",
+      "source": "Craigslist",
+      "title": "Noe Valley/4475 23rd St./City Views/Balcony/W/D in unit/Available Now!",
+      "address": "Noe Valley/4475 23rd St./City Views/Balcony/W/D in unit/Available Now!",
+      "neighborhood": "Noe Valley",
+      "rent": 4145,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-noe-valley-rd-st-city/7925122560.html",
+      "img": "https://images.craigslist.org/00606_aJoEG30WVlO_09G06s_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": true,
+      "laundry": "in-unit",
+      "outdoor": true,
+      "score": 63,
+      "score_notes": [
+        "Mid-tier hood",
+        "Parking",
+        "In-unit laundry",
+        "Outdoor space"
+      ]
+    },
+    {
       "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-bright-modern-one-bedroom/7925059313.html",
       "source": "Craigslist",
       "title": "Bright & Modern One Bedroom in Prime Noe Valley Location",
@@ -322,6 +428,69 @@
       ]
     },
     {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-noe-valley-630/7925121555.html",
+      "source": "Craigslist",
+      "title": "Noe Valley/630 Alvarado&Castro/balcony/W/D in unit/Coming Soon!!",
+      "address": "Noe Valley/630 Alvarado&Castro/balcony/W/D in unit/Coming Soon!!",
+      "neighborhood": "Noe Valley",
+      "rent": 4195,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-noe-valley-630/7925121555.html",
+      "img": "https://images.craigslist.org/00P0P_czLfvuqZEuA_09G06s_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "in-unit",
+      "outdoor": true,
+      "score": 58,
+      "score_notes": [
+        "Mid-tier hood",
+        "In-unit laundry",
+        "Outdoor space"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-hayes-valley/7925121172.html",
+      "source": "Craigslist",
+      "title": "Hayes Valley/300Buchanan&Haight/W/D in unit/ Coming Soon!!",
+      "address": "Hayes Valley/300Buchanan&Haight/W/D in unit/ Coming Soon!!",
+      "neighborhood": "Hayes Valley",
+      "rent": 4495,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-hayes-valley/7925121172.html",
+      "img": "https://images.craigslist.org/00Q0Q_cQKuDrUDCUd_0cU08C_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "in-unit",
+      "outdoor": false,
+      "score": 55,
+      "score_notes": [
+        "Mid-tier hood",
+        "In-unit laundry"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-inner-richmond/7925125817.html",
+      "source": "Craigslist",
+      "title": "Inner Richmond/175 21stAve&California/Balcony/W/D in unit/Coming soon!",
+      "address": "Inner Richmond/175 21stAve&California/Balcony/W/D in unit/Coming soon!",
+      "neighborhood": "Inner Richmond",
+      "rent": 3795,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-inner-richmond/7925125817.html",
+      "img": "https://images.craigslist.org/00B0B_fQkWZuzjfQB_09G06t_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "in-unit",
+      "outdoor": true,
+      "score": 53,
+      "score_notes": [
+        "Value hood",
+        "Under $4k",
+        "In-unit laundry",
+        "Outdoor space"
+      ]
+    },
+    {
       "id": "wavro-4995-$4,995/mo Nob Hill R",
       "source": "J. Wavro Associates",
       "title": "$4,995/mo Nob Hill Remodeled View Jr 1bd Condo at Gramercy Towers! Studio 1 BA",
@@ -338,6 +507,27 @@
       "score_notes": [
         "Mid-tier hood",
         "PM site exclusive \u26a1"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-inner-richmond-st/7925125890.html",
+      "source": "Craigslist",
+      "title": "Inner Richmond/175 21st Ave&California/Balcony/Remodeled/Coming soon!",
+      "address": "Inner Richmond/175 21st Ave&California/Balcony/Remodeled/Coming soon!",
+      "neighborhood": "Inner Richmond",
+      "rent": 3595,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-inner-richmond-st/7925125890.html",
+      "img": "https://images.craigslist.org/00b0b_ljs1KOTX5Cd_09G06s_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": true,
+      "score": 48,
+      "score_notes": [
+        "Value hood",
+        "Under $4k",
+        "Outdoor space"
       ]
     }
   ]
