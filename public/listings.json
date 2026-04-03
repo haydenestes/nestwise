@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-03T13:48:02Z",
+  "updated": "2026-04-03T17:05:44Z",
   "listings": [
     {
       "id": "https://gaetanirealestate.appfolio.com/listings/detail/ac1e1ad4-5ac1-4523-b482-e0e340b73cb4",
@@ -62,6 +62,26 @@
         "Top-tier hood",
         "Under $4k",
         "PM site exclusive \u26a1"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-epic-apt-in-the-heart-of/7925381557.html",
+      "source": "Craigslist",
+      "title": "Epic apt in the heart of Cow Hollow",
+      "address": "Epic apt in the heart of Cow Hollow",
+      "neighborhood": "Cow Hollow",
+      "rent": 3800,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-epic-apt-in-the-heart-of/7925381557.html",
+      "img": null,
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 75,
+      "score_notes": [
+        "Top-tier hood",
+        "Under $4k"
       ]
     },
     {
@@ -246,26 +266,6 @@
       ]
     },
     {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-one-rincon-hill-bd-ba/7925254849.html",
-      "source": "Craigslist",
-      "title": "ONE RINCON HILL | 1 BD / 1 BA With Full Marina and Bay Bridge Views",
-      "address": "ONE RINCON HILL | 1 BD / 1 BA With Full Marina and Bay Bridge Views",
-      "neighborhood": "Marina",
-      "rent": 5490,
-      "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-one-rincon-hill-bd-ba/7925254849.html",
-      "img": "https://images.craigslist.org/01717_8HonhJzOKN7_0x20m1_600x450.jpg",
-      "pet_policy": "unknown",
-      "parking": true,
-      "laundry": "shared",
-      "outdoor": false,
-      "score": 70,
-      "score_notes": [
-        "Top-tier hood",
-        "Parking"
-      ]
-    },
-    {
       "id": "https://chandlerproperties.com/rental-listings/?lid=92e70ec6-0356-4812-a6c9-2f555355c6a4",
       "source": "Chandler Properties",
       "title": "$4,595 2121 26th Street #201, San Francisco, CA 94107 Availa",
@@ -302,6 +302,25 @@
       "score_notes": [
         "Top-tier hood",
         "Outdoor space"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7924300055.html",
+      "source": "Craigslist",
+      "title": "Luxury Pacific Heights 1br Condo",
+      "address": "Luxury Pacific Heights 1br Condo",
+      "neighborhood": "Pacific Heights",
+      "rent": 4900,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7924300055.html",
+      "img": "https://images.craigslist.org/00a0a_4nTVKArQoNI_1761u8_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 65,
+      "score_notes": [
+        "Top-tier hood"
       ]
     },
     {
