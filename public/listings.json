@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-02T23:07:18Z",
+  "updated": "2026-04-03T03:11:41Z",
   "listings": [
     {
       "id": "https://gaetanirealestate.appfolio.com/listings/detail/ac1e1ad4-5ac1-4523-b482-e0e340b73cb4",
@@ -61,6 +61,26 @@
       "score_notes": [
         "Top-tier hood",
         "Under $4k",
+        "PM site exclusive \u26a1"
+      ]
+    },
+    {
+      "id": "https://chandlerproperties.com/rental-listings/?lid=fa588810-85b5-48d3-8075-e833c15b947b",
+      "source": "Chandler Properties",
+      "title": "$4,150 815A Kansas Street , San Francisco, CA 94107 Availabl",
+      "address": "$4,150 815A Kansas Street , San Francisco, CA 94107 Availabl",
+      "neighborhood": "Pacific Heights",
+      "rent": 4150,
+      "beds": 2,
+      "link": "https://chandlerproperties.com/rental-listings/?lid=fa588810-85b5-48d3-8075-e833c15b947b",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 75,
+      "score_notes": [
+        "Top-tier hood",
+        "2+ BR",
         "PM site exclusive \u26a1"
       ]
     },
@@ -249,7 +269,7 @@
       "title": "Luxury Pacific Heights 1br Condo",
       "address": "Luxury Pacific Heights 1br Condo",
       "neighborhood": "Pacific Heights",
-      "rent": 5400,
+      "rent": 4900,
       "beds": 1,
       "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7924715338.html",
       "img": "https://images.craigslist.org/00a0a_4nTVKArQoNI_1761u8_600x450.jpg",
@@ -280,26 +300,6 @@
         "Mid-tier hood",
         "Under $4k",
         "PM site exclusive \u26a1"
-      ]
-    },
-    {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-bed-bath-walk-in-shower/7925208930.html",
-      "source": "Craigslist",
-      "title": "1 Bed/1 Bath, Walk-in Shower, In Unit W/D*Walk to Hayes Valley",
-      "address": "1 Bed/1 Bath, Walk-in Shower, In Unit W/D*Walk to Hayes Valley",
-      "neighborhood": "Hayes Valley",
-      "rent": 3795,
-      "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-bed-bath-walk-in-shower/7925208930.html",
-      "img": "https://images.craigslist.org/00a0a_fNBJrJjNa0c_0CI0pO_600x450.jpg",
-      "pet_policy": "unknown",
-      "parking": false,
-      "laundry": "shared",
-      "outdoor": false,
-      "score": 60,
-      "score_notes": [
-        "Mid-tier hood",
-        "Under $4k"
       ]
     },
     {
