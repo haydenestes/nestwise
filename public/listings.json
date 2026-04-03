@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-03T03:11:41Z",
+  "updated": "2026-04-03T05:13:23Z",
   "listings": [
     {
       "id": "https://gaetanirealestate.appfolio.com/listings/detail/ac1e1ad4-5ac1-4523-b482-e0e340b73cb4",
@@ -261,6 +261,25 @@
       "score_notes": [
         "Top-tier hood",
         "PM site exclusive \u26a1"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-bright-corner-1br-1ba-in/7925308226.html",
+      "source": "Craigslist",
+      "title": "Bright Corner 1BR/1BA in Pacific Heights | Parquet Floors, Garage",
+      "address": "Bright Corner 1BR/1BA in Pacific Heights | Parquet Floors, Garage",
+      "neighborhood": "Pacific Heights",
+      "rent": 5210,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-bright-corner-1br-1ba-in/7925308226.html",
+      "img": "https://images.craigslist.org/01313_KEhiJzH3Lu_0CI0t2_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 65,
+      "score_notes": [
+        "Top-tier hood"
       ]
     },
     {
