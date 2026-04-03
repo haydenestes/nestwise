@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-03T11:18:25Z",
+  "updated": "2026-04-03T13:48:02Z",
   "listings": [
     {
       "id": "https://gaetanirealestate.appfolio.com/listings/detail/ac1e1ad4-5ac1-4523-b482-e0e340b73cb4",
@@ -321,6 +321,26 @@
       "score_notes": [
         "Mid-tier hood",
         "Under $4k",
+        "PM site exclusive \u26a1"
+      ]
+    },
+    {
+      "id": "wavro-4250-$4,250/mo Nob Hill L",
+      "source": "J. Wavro Associates",
+      "title": "$4,250/mo Nob Hill Large 1 Bedroom Condo w/ Views and Parking 1 BR 1 BA",
+      "address": "$4,250/mo Nob Hill Large 1 Bedroom Condo w/ Views and Parking 1 BR 1 BA",
+      "neighborhood": "Nob Hill",
+      "rent": 4250,
+      "beds": 1,
+      "link": "https://www.jwavro.com/rental_list.php?hood=San+Francisco",
+      "pet_policy": "unknown",
+      "parking": true,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 60,
+      "score_notes": [
+        "Mid-tier hood",
+        "Parking",
         "PM site exclusive \u26a1"
       ]
     },
