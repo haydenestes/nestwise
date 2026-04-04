@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-04T03:45:10Z",
+  "updated": "2026-04-04T16:19:43Z",
   "listings": [
     {
       "id": "wavro-5495-$5,495/mo Russian Hi",
@@ -372,34 +372,15 @@
       ]
     },
     {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7924460929.html",
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7925574682.html",
       "source": "Craigslist",
       "title": "Luxury Pacific Heights 1br Condo",
       "address": "Luxury Pacific Heights 1br Condo",
       "neighborhood": "Pacific Heights",
-      "rent": 5300,
+      "rent": 4900,
       "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7924460929.html",
-      "img": "https://images.craigslist.org/00e0e_kEgZvOZVgES_1761u8_600x450.jpg",
-      "pet_policy": "unknown",
-      "parking": false,
-      "laundry": "shared",
-      "outdoor": false,
-      "score": 65,
-      "score_notes": [
-        "Top-tier hood"
-      ]
-    },
-    {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-remodeled-large-2bed/7925436383.html",
-      "source": "Craigslist",
-      "title": "Remodeled large 2Bed/2Bath apt - Near the Marina! ~ J.Wavro",
-      "address": "Remodeled large 2Bed/2Bath apt - Near the Marina! ~ J.Wavro",
-      "neighborhood": "Marina",
-      "rent": 5495,
-      "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-remodeled-large-2bed/7925436383.html",
-      "img": "https://images.craigslist.org/00c0c_2iFJILoFaiN_0es09G_600x450.jpg",
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7925574682.html",
+      "img": "https://images.craigslist.org/00C0C_3aF09FqscPF_0lM0t2_600x450.jpg",
       "pet_policy": "unknown",
       "parking": false,
       "laundry": "shared",
@@ -447,25 +428,6 @@
       "score_notes": [
         "Mid-tier hood",
         "Under $4k"
-      ]
-    },
-    {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-bright-bedroom-bathroom/7921349703.html",
-      "source": "Craigslist",
-      "title": "Bright 2 Bedroom / 2 Bathroom Apartment in Prime Nob Hill Location",
-      "address": "Bright 2 Bedroom / 2 Bathroom Apartment in Prime Nob Hill Location",
-      "neighborhood": "Nob Hill",
-      "rent": 5495,
-      "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-bright-bedroom-bathroom/7921349703.html",
-      "img": "https://images.craigslist.org/00k0k_g19J09Q6ni4_0CI0lM_600x450.jpg",
-      "pet_policy": "unknown",
-      "parking": false,
-      "laundry": "shared",
-      "outdoor": false,
-      "score": 50,
-      "score_notes": [
-        "Mid-tier hood"
       ]
     },
     {
