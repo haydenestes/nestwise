@@ -79,6 +79,7 @@ export default function TermsPage() {
 
           <h2>11. Binding Arbitration &amp; Class Action Waiver</h2>
           <p>Any dispute arising from or relating to these Terms or your use of Nestwise will be resolved by binding individual arbitration administered by JAMS under its Streamlined Arbitration Rules, not by a court. <strong>You waive your right to a jury trial and to participate in any class action.</strong> Arbitration will take place in San Francisco, California.</p>
+        </div>
       </div>
     </>
   );

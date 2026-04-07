@@ -89,6 +89,7 @@ export default function PrivacyPage() {
             <li><strong>Right to Non-Discrimination</strong> — we will not discriminate against you for exercising your rights</li>
           </ul>
           <p>To exercise any of these rights, contact us at the email below. We will respond within 45 days.</p>
+        </div>
       </div>
     </>
   );
