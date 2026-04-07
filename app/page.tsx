@@ -280,7 +280,22 @@ export default function LandingPage() {
         @media (max-width: 768px) {
           .hero-root { grid-template-columns: 1fr; }
           .hero-right { display: none; }
-          .hero-left { padding: 24px 20px 40px; }
+          .hero-left {
+            padding: 24px 20px 40px;
+            background-image: url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&q=80');
+            background-size: cover;
+            background-position: center top;
+            position: relative;
+          }
+          .hero-left::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(14,12,10,0.80) 0%, rgba(14,12,10,0.68) 50%, rgba(14,12,10,0.88) 100%);
+            z-index: 0;
+            pointer-events: none;
+          }
+          .hero-left > * { position: relative; z-index: 1; }
           .hero-nav { margin-bottom: 40px; }
           .hero-nav-links { display: none; }
           .hero-eyebrow { font-size: 9px; margin-bottom: 14px; }
