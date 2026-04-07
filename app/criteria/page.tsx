@@ -10,6 +10,10 @@ import { SF_NEIGHBORHOODS, UNIT_TYPES, PET_OPTIONS, AMENITIES, ALERT_TIMES } fro
 export default function CriteriaPage() {
   const router = useRouter();
   const [checkoutLoading, setCheckoutLoading] = React.useState(false);
+  const [step, setStep] = React.useState<'criteria' | 'review'>('criteria');
+  const [promoCode, setPromoCode] = React.useState('');
+  const [promoError, setPromoError] = React.useState('');
+  const [promoLoading, setPromoLoading] = React.useState(false);
   const {
     user,
     setAuthOpen,
@@ -34,11 +38,41 @@ export default function CriteriaPage() {
       return;
     }
 
+    setStep('review');
+  }
+
+  async function handlePromoSubmit() {
+    if (!promoCode.trim()) {
+      // No code — go straight to Stripe
+      goToCheckout();
+      return;
+    }
+
+    setPromoLoading(true);
+    setPromoError('');
+
+    try {
+      const res = await fetch('/api/redeem-promo', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ code: promoCode.trim() }),
+      });
+      const data = await res.json();
+      if (res.ok && data.success) {
+        // Valid promo — skip Stripe, go straight to search
+        router.push('/search');
+      } else {
+        setPromoError(data.error || 'Invalid or expired code');
+      }
+    } catch {
+      setPromoError('Could not verify code. Please try again.');
+    } finally {
+      setPromoLoading(false);
+    }
+  }
+
+  async function goToCheckout() {
     setCheckoutLoading(true);
-
-
-
-    // No promo code — proceed to Stripe
     try {
       const res = await fetch('/api/checkout', {
         method: 'POST',
@@ -310,16 +344,70 @@ export default function CriteriaPage() {
 
       {/* Fixed bottom CTA bar */}
       <div className="cta-bar">
-        <div className="cta-bar-meta">
-          <strong>{hoods.length}</strong> neighborhoods &middot;{' '}
-          <strong>
-            ${minRent.toLocaleString()}–${maxRent.toLocaleString()}
-          </strong>{' '}
-          &middot; <strong>{beds.join(', ') || 'Any size'}</strong>
-        </div>
-        <button className="btn-primary" onClick={handleStartSearch} disabled={checkoutLoading}>
-          {checkoutLoading ? 'Redirecting to checkout…' : 'Start My Search →'}
-        </button>
+        {step === 'criteria' ? (
+          <>
+            <div className="cta-bar-meta">
+              <strong>{hoods.length}</strong> neighborhoods &middot;{' '}
+              <strong>
+                ${minRent.toLocaleString()}–${maxRent.toLocaleString()}
+              </strong>{' '}
+              &middot; <strong>{beds.join(', ') || 'Any size'}</strong>
+            </div>
+            <button className="btn-primary" onClick={handleStartSearch} disabled={checkoutLoading}>
+              {checkoutLoading ? 'Loading…' : 'Continue →'}
+            </button>
+          </>
+        ) : (
+          <>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', flex: 1 }}>
+              <div>
+                <label style={{ display: 'block', fontSize: '13px', fontWeight: 500, marginBottom: '8px', color: 'rgba(240,235,224,0.7)' }}>
+                  Have a referral code?
+                </label>
+                <input
+                  type="text"
+                  placeholder="Enter code (e.g. DAISY2026)"
+                  value={promoCode}
+                  onChange={(e) => { setPromoCode(e.target.value.toUpperCase()); setPromoError(''); }}
+                  style={{
+                    width: '100%',
+                    padding: '12px 16px',
+                    borderRadius: '8px',
+                    border: '1px solid rgba(240,235,224,0.2)',
+                    background: 'rgba(255,255,255,0.05)',
+                    color: '#f0ebe0',
+                    fontSize: '14px',
+                    letterSpacing: '0.05em',
+                    boxSizing: 'border-box',
+                  }}
+                />
+                {promoError && <div style={{ fontSize: '12px', color: '#ef4444', marginTop: '6px' }}>{promoError}</div>}
+              </div>
+              <button
+                className="btn-primary"
+                onClick={handlePromoSubmit}
+                disabled={promoLoading || checkoutLoading}
+                style={{ width: '100%' }}
+              >
+                {promoLoading ? 'Verifying…' : checkoutLoading ? 'Redirecting…' : promoCode ? 'Apply Code →' : 'Proceed to Payment →'}
+              </button>
+              <button
+                onClick={() => setStep('criteria')}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: 'rgba(240,235,224,0.5)',
+                  fontSize: '13px',
+                  cursor: 'pointer',
+                  padding: 0,
+                  textDecoration: 'underline',
+                }}
+              >
+                Back
+              </button>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
