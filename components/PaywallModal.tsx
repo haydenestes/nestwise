@@ -1,7 +1,8 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { getSupabase } from '@/lib/supabase';
 
 interface PaywallModalProps {
   onClose: () => void;
@@ -9,6 +10,41 @@ interface PaywallModalProps {
 
 export default function PaywallModal({ onClose }: PaywallModalProps) {
   const router = useRouter();
+  const [promoCode, setPromoCode] = useState('');
+  const [showPromo, setShowPromo] = useState(false);
+  const [promoError, setPromoError] = useState('');
+  const [promoLoading, setPromoLoading] = useState(false);
+
+  async function handleContinue() {
+    if (promoCode.trim()) {
+      setPromoLoading(true);
+      setPromoError('');
+      try {
+        const supabase = getSupabase();
+        const { data: { user } } = await supabase.auth.getUser();
+        const res = await fetch('/api/redeem-promo', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ code: promoCode.trim(), userId: user?.id }),
+        });
+        const json = await res.json();
+        if (res.ok && json.success) {
+          router.push('/dashboard');
+          return;
+        } else {
+          setPromoError(json.error || 'Invalid or expired code');
+          setPromoLoading(false);
+          return;
+        }
+      } catch {
+        setPromoError('Something went wrong. Please try again.');
+        setPromoLoading(false);
+        return;
+      }
+    }
+    // No promo code — proceed to signup/Stripe
+    router.push('/signup');
+  }
 
   return (
     <div style={{
@@ -82,8 +118,54 @@ export default function PaywallModal({ onClose }: PaywallModalProps) {
             ))}
           </div>
 
+          {/* Promo code section */}
+          <div style={{ marginBottom: '16px', textAlign: 'left' }}>
+            {!showPromo ? (
+              <button
+                onClick={() => setShowPromo(true)}
+                style={{
+                  background: 'none', border: 'none',
+                  color: 'rgba(201,168,76,0.65)', fontSize: '12px',
+                  cursor: 'pointer', textDecoration: 'underline',
+                  fontFamily: 'Inter, sans-serif', padding: 0,
+                }}
+              >
+                Have a referral code?
+              </button>
+            ) : (
+              <div>
+                <label style={{ display: 'block', fontSize: '11px', letterSpacing: '0.06em', color: 'rgba(240,235,224,0.5)', textTransform: 'uppercase', marginBottom: '6px' }}>
+                  Referral Code
+                </label>
+                <input
+                  type="text"
+                  value={promoCode}
+                  onChange={e => { setPromoCode(e.target.value); setPromoError(''); }}
+                  placeholder="Enter code"
+                  style={{
+                    width: '100%',
+                    background: 'rgba(240,235,224,0.04)',
+                    border: '1px solid rgba(240,235,224,0.15)',
+                    borderRadius: '4px',
+                    padding: '9px 12px',
+                    color: '#f0ebe0',
+                    fontSize: '14px',
+                    fontFamily: 'Inter, sans-serif',
+                    outline: 'none',
+                    letterSpacing: '0.06em',
+                    textTransform: 'uppercase',
+                  }}
+                />
+                {promoError && (
+                  <div style={{ fontSize: '12px', color: '#f87171', marginTop: '6px' }}>{promoError}</div>
+                )}
+              </div>
+            )}
+          </div>
+
           <button
-            onClick={() => router.push('/signup')}
+            onClick={handleContinue}
+            disabled={promoLoading}
             style={{
               width: '100%',
               background: '#c9a84c',
@@ -95,14 +177,15 @@ export default function PaywallModal({ onClose }: PaywallModalProps) {
               letterSpacing: '0.08em',
               textTransform: 'uppercase',
               padding: '13px',
-              cursor: 'pointer',
+              cursor: promoLoading ? 'not-allowed' : 'pointer',
               fontFamily: 'Inter, sans-serif',
               transition: 'background 0.18s',
+              opacity: promoLoading ? 0.7 : 1,
             }}
-            onMouseOver={e => (e.currentTarget.style.background = '#e8c97a')}
-            onMouseOut={e => (e.currentTarget.style.background = '#c9a84c')}
+            onMouseOver={e => { if (!promoLoading) e.currentTarget.style.background = '#e8c97a'; }}
+            onMouseOut={e => { if (!promoLoading) e.currentTarget.style.background = '#c9a84c'; }}
           >
-            Start for $29/mo →
+            {promoLoading ? 'Verifying…' : promoCode.trim() ? 'Apply Code →' : 'Start for $29/mo →'}
           </button>
         </div>
 

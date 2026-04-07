@@ -55,7 +55,7 @@ export default function HowItWorksPage() {
         <nav style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '24px 48px', borderBottom: '1px solid rgba(240,235,224,0.07)' }}>
           <Link href="/" style={{ fontSize: '13px', fontWeight: 500, letterSpacing: '0.18em', color: '#c9a84c', textTransform: 'uppercase', textDecoration: 'none' }}>Nestwise</Link>
           <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
-            <Link href="/waitlist" style={{ fontSize: '12px', color: 'rgba(240,235,224,0.45)', textDecoration: 'none' }}>Waitlist</Link>
+            <Link href="/signup" style={{ fontSize: '12px', color: 'rgba(240,235,224,0.45)', textDecoration: 'none' }}>Sign up</Link>
             <Link href="/signin" style={{ fontSize: '12px', color: 'rgba(240,235,224,0.45)', textDecoration: 'none' }}>Sign in</Link>
           </div>
         </nav>

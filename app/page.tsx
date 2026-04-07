@@ -294,7 +294,7 @@ export default function LandingPage() {
             <div className="hero-nav-links">
               <Link href="/how-it-works" style={{ fontSize: '12px', fontWeight: 300, color: 'rgba(240,235,224,0.55)', textDecoration: 'none', letterSpacing: '0.04em' }}>How it works</Link>
               <Link href="/neighborhoods-hub" style={{ fontSize: '12px', fontWeight: 300, color: 'rgba(240,235,224,0.55)', textDecoration: 'none', letterSpacing: '0.04em' }}>Neighborhoods</Link>
-              <Link href="/waitlist" style={{ fontSize: '12px', fontWeight: 300, color: 'rgba(240,235,224,0.55)', textDecoration: 'none', letterSpacing: '0.04em' }}>Waitlist</Link>
+              <Link href="/signup" style={{ fontSize: '12px', fontWeight: 300, color: 'rgba(240,235,224,0.55)', textDecoration: 'none', letterSpacing: '0.04em' }}>Sign up</Link>
               <Link href="/signin" className="hero-signin">Sign in</Link>
             </div>
           </nav>

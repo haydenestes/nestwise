@@ -78,7 +78,7 @@ export default function PaywallPage() {
 
           <div style={{ fontSize: '12px', color: 'rgba(240,235,224,0.25)' }}>
             Not ready yet?{' '}
-            <Link href="/waitlist" style={{ color: 'rgba(201,168,76,0.5)', textDecoration: 'none' }}>Join the waitlist →</Link>
+            <Link href="/signup" style={{ color: 'rgba(201,168,76,0.5)', textDecoration: 'none' }}>Sign up →</Link>
           </div>
         </div>
       </div>
