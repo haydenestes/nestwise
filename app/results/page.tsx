@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { MOCK_LISTINGS, MockListing } from '@/lib/mockListings';
 import { ZillowListing } from '@/lib/zillow';
 import { scoreAndSort, SearchCriteria } from '@/lib/scoring';
+import { getSupabase } from '@/lib/supabase';
 
 type AnyListing = MockListing | ZillowListing;
 import PaywallModal from '@/components/PaywallModal';
@@ -19,6 +20,7 @@ function ResultsInner() {
   const [criteria, setCriteria] = useState<SearchCriteria | null>(null);
   const [sort, setSort] = useState<SortKey>('score');
   const [showPaywall, setShowPaywall] = useState(false);
+  const [paywallMessage, setPaywallMessage] = useState<string | undefined>(undefined);
   const [searchCount, setSearchCount] = useState(0);
 
   useEffect(() => {
@@ -28,8 +30,26 @@ function ResultsInner() {
         const c: SearchCriteria = JSON.parse(raw);
         setCriteria(c);
 
-        // Try live Zillow data first, fall back to mock
-        const fetchListings = async () => {
+        // Track search count in localStorage and gate on 2nd+ search for non-logged-in users
+        const checkAndGate = async () => {
+          const supabase = getSupabase();
+          const { data: { session } } = await supabase.auth.getSession();
+          const isLoggedIn = !!session?.user;
+
+          if (!isLoggedIn) {
+            const stored = parseInt(localStorage.getItem('nestwise_search_count') || '0', 10);
+            const next = stored + 1;
+            localStorage.setItem('nestwise_search_count', String(next));
+            setSearchCount(next);
+
+            if (next > 1) {
+              setPaywallMessage("You've used your free search. Sign up to keep searching.");
+              setShowPaywall(true);
+              return; // Don't fetch listings — show paywall immediately
+            }
+          }
+
+          // Try live Zillow data first, fall back to mock
           try {
             const qs = new URLSearchParams();
             if (c.maxPrice)      qs.set('maxPrice', String(c.maxPrice));
@@ -48,12 +68,8 @@ function ResultsInner() {
             setDataSource('mock');
           }
         };
-        fetchListings();
-        setSearchCount(prev => {
-          const next = prev + 1;
-          if (next > 1) setShowPaywall(true);
-          return next;
-        });
+
+        checkAndGate();
       } catch { setListings(MOCK_LISTINGS); }
     } else {
       setListings(MOCK_LISTINGS);
@@ -112,7 +128,7 @@ function ResultsInner() {
         }
       `}</style>
 
-      {showPaywall && <PaywallModal onClose={() => setShowPaywall(false)} />}
+      {showPaywall && <PaywallModal onClose={() => setShowPaywall(false)} message={paywallMessage} />}
 
       <div style={{ minHeight: '100vh', background: '#0e0c0a', color: '#f0ebe0', fontFamily: 'Inter, sans-serif' }}>
 

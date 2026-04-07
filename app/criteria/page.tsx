@@ -218,53 +218,101 @@ export default function CriteriaPage() {
         {/* Alerts */}
         <div className="card">
           <div className="card-eyebrow">Alerts</div>
-          <div className="card-title">Notification Preferences</div>
+          <div className="card-title">How often should we notify you?</div>
+          <div className="card-desc">
+            Stay on top of new matches without inbox overload.
+          </div>
 
-          <div className="toggle-row">
-            <div className="toggle-info">
-              <div className="toggle-label">Instant alerts</div>
-              <div className="toggle-desc">
-                Get notified within minutes of a new match going live
+          {/* Paid feature label */}
+          <div style={{
+            display: 'inline-flex', alignItems: 'center', gap: '6px',
+            fontSize: '11px', color: '#c9a84c', marginBottom: '20px',
+            background: 'rgba(201,168,76,0.08)', border: '1px solid rgba(201,168,76,0.2)',
+            borderRadius: '4px', padding: '5px 10px',
+          }}>
+            ✓ Included with your subscription ($29/mo)
+          </div>
+
+          {/* Alert frequency cards */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px', marginBottom: '24px' }}>
+            {[
+              {
+                id: 'daily',
+                label: 'Daily digest',
+                desc: 'One email per day with all new matches',
+                onClick: () => { setDigest(true); setInstantAlerts(false); setAlertTimes(['8:00 AM']); },
+                active: digest && !instantAlerts,
+              },
+              {
+                id: 'twice_daily',
+                label: 'Twice daily',
+                desc: 'Morning and evening roundup',
+                onClick: () => { setDigest(true); setInstantAlerts(false); setAlertTimes(['8:00 AM', '6:00 PM']); },
+                active: digest && !instantAlerts && alertTimes.length === 2,
+              },
+              {
+                id: 'instant',
+                label: 'As listings drop',
+                desc: 'Instant alert within 1 hour of posting',
+                onClick: () => { setInstantAlerts(true); setDigest(false); setAlertTimes([]); },
+                active: instantAlerts,
+              },
+            ].map((option) => (
+              <button
+                key={option.id}
+                onClick={option.onClick}
+                style={{
+                  background: option.active ? 'rgba(201,168,76,0.08)' : 'rgba(240,235,224,0.03)',
+                  border: `1px solid ${option.active ? '#c9a84c' : 'rgba(240,235,224,0.12)'}`,
+                  borderRadius: '10px',
+                  padding: '16px 14px',
+                  cursor: 'pointer',
+                  textAlign: 'left',
+                  transition: 'all 0.15s',
+                  fontFamily: 'Inter, sans-serif',
+                }}
+              >
+                <div style={{
+                  fontSize: '13px', fontWeight: 600,
+                  color: option.active ? '#c9a84c' : '#f0ebe0',
+                  marginBottom: '6px',
+                }}>
+                  {option.active && <span style={{ marginRight: '4px' }}>✓</span>}
+                  {option.label}
+                </div>
+                <div style={{
+                  fontSize: '11px',
+                  color: 'rgba(240,235,224,0.45)',
+                  lineHeight: 1.5,
+                }}>
+                  {option.desc}
+                </div>
+              </button>
+            ))}
+          </div>
+
+          {/* Advanced: delivery time picker (only shown for digest modes) */}
+          {digest && !instantAlerts && (
+            <div style={{ marginTop: '4px' }}>
+              <div className="toggle-label" style={{ marginBottom: '4px' }}>
+                Custom delivery times
+              </div>
+              <div className="toggle-desc" style={{ marginBottom: '8px' }}>
+                Fine-tune exactly when you get your digest
+              </div>
+              <div className="time-grid">
+                {ALERT_TIMES.map((t) => (
+                  <button
+                    key={t}
+                    className={`time-btn${alertTimes.includes(t) ? ' on' : ''}`}
+                    onClick={() => setAlertTimes(toggle(alertTimes, t))}
+                  >
+                    {t}
+                  </button>
+                ))}
               </div>
             </div>
-            <button
-              className={`switch${instantAlerts ? ' on' : ''}`}
-              onClick={() => setInstantAlerts(!instantAlerts)}
-            />
-          </div>
-
-          <div className="toggle-row">
-            <div className="toggle-info">
-              <div className="toggle-label">Daily digest</div>
-              <div className="toggle-desc">
-                Summary of all new matches sent once per day
-              </div>
-            </div>
-            <button
-              className={`switch${digest ? ' on' : ''}`}
-              onClick={() => setDigest(!digest)}
-            />
-          </div>
-
-          <div style={{ marginTop: '8px' }}>
-            <div className="toggle-label" style={{ marginBottom: '4px' }}>
-              Alert delivery times
-            </div>
-            <div className="toggle-desc" style={{ marginBottom: '0' }}>
-              Choose when you want to receive your alert digests
-            </div>
-            <div className="time-grid">
-              {ALERT_TIMES.map((t) => (
-                <button
-                  key={t}
-                  className={`time-btn${alertTimes.includes(t) ? ' on' : ''}`}
-                  onClick={() => setAlertTimes(toggle(alertTimes, t))}
-                >
-                  {t}
-                </button>
-              ))}
-            </div>
-          </div>
+          )}
         </div>
 
         {/* Email */}

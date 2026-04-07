@@ -6,9 +6,10 @@ import { getSupabase } from '@/lib/supabase';
 
 interface PaywallModalProps {
   onClose: () => void;
+  message?: string;
 }
 
-export default function PaywallModal({ onClose }: PaywallModalProps) {
+export default function PaywallModal({ onClose, message }: PaywallModalProps) {
   const router = useRouter();
   const [promoCode, setPromoCode] = useState('');
   const [showPromo, setShowPromo] = useState(false);
@@ -82,7 +83,7 @@ export default function PaywallModal({ onClose }: PaywallModalProps) {
             You found your matches.
           </div>
           <div style={{ fontSize: '14px', color: 'rgba(240,235,224,0.55)', lineHeight: 1.6, maxWidth: '360px', margin: '0 auto' }}>
-            Create an account to save listings, get real-time alerts, and unlock your application head-start.
+            {message || 'Create an account to save listings, get real-time alerts, and unlock your application head-start.'}
           </div>
         </div>
 
