@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-07T19:42:39Z",
+  "updated": "2026-04-07T21:42:36Z",
   "listings": [
     {
       "id": "wavro-5495-$5,495/mo Russian Hi",
@@ -128,6 +128,27 @@
         "Top-tier hood",
         "Under $4k",
         "PM site exclusive \u26a1"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-remodeled-top-floor-1br/7925441620.html",
+      "source": "Craigslist",
+      "title": "Remodeled Top-Floor 1BR in Hayes Valley, In-Unit Laundry, Pet Friendly",
+      "address": "Remodeled Top-Floor 1BR in Hayes Valley, In-Unit Laundry, Pet Friendly",
+      "neighborhood": "Hayes Valley",
+      "rent": 4195,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-remodeled-top-floor-1br/7925441620.html",
+      "img": "https://images.craigslist.org/00r0r_91UdBdWMxDH_0CI0lM_600x450.jpg",
+      "pet_policy": "pets_ok",
+      "parking": false,
+      "laundry": "in-unit",
+      "outdoor": false,
+      "score": 75,
+      "score_notes": [
+        "Mid-tier hood",
+        "\ud83d\udc3e Pets OK",
+        "In-unit laundry"
       ]
     },
     {
@@ -272,6 +293,28 @@
       ]
     },
     {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-2br-noe-valley-apartment/7926258468.html",
+      "source": "Craigslist",
+      "title": "2BR - Noe Valley Apartment with Parking",
+      "address": "2BR - Noe Valley Apartment with Parking",
+      "neighborhood": "Noe Valley",
+      "rent": 3795,
+      "beds": 2,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-2br-noe-valley-apartment/7926258468.html",
+      "img": "https://images.craigslist.org/00w0w_dCgXFZV2hyg_0CI0pL_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": true,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 70,
+      "score_notes": [
+        "Mid-tier hood",
+        "Under $4k",
+        "2+ BR",
+        "Parking"
+      ]
+    },
+    {
       "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-large-bright-unit-in-cow/7926195328.html",
       "source": "Craigslist",
       "title": "Large bright unit in Cow Hollow with parking available",
@@ -330,26 +373,6 @@
         "Mid-tier hood",
         "Under $4k",
         "PM site exclusive \u26a1"
-      ]
-    },
-    {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-tmlp-13-mo-landmark/7926181120.html",
-      "source": "Craigslist",
-      "title": "TMLP 13-mo. | Landmark Living in the Arts District, Near Hayes Valley.",
-      "address": "TMLP 13-mo. | Landmark Living in the Arts District, Near Hayes Valley.",
-      "neighborhood": "Hayes Valley",
-      "rent": 3927,
-      "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-tmlp-13-mo-landmark/7926181120.html",
-      "img": "https://images.craigslist.org/00z0z_h3yz79H4EHF_0c6085_600x450.jpg",
-      "pet_policy": "unknown",
-      "parking": false,
-      "laundry": "shared",
-      "outdoor": false,
-      "score": 60,
-      "score_notes": [
-        "Mid-tier hood",
-        "Under $4k"
       ]
     },
     {
