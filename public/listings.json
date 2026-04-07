@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-07T17:38:04Z",
+  "updated": "2026-04-07T19:42:39Z",
   "listings": [
     {
       "id": "wavro-5495-$5,495/mo Russian Hi",
@@ -272,23 +272,23 @@
       ]
     },
     {
-      "id": "https://gaetanirealestate.appfolio.com/listings/detail/beeef512-4109-4633-88cb-52c3dee6da1b",
-      "source": "Gaetani Real Estate",
-      "title": "1809 California St",
-      "address": "1809 California St",
-      "neighborhood": "Pacific Heights",
-      "rent": 5495,
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-large-bright-unit-in-cow/7926195328.html",
+      "source": "Craigslist",
+      "title": "Large bright unit in Cow Hollow with parking available",
+      "address": "Large bright unit in Cow Hollow with parking available",
+      "neighborhood": "Cow Hollow",
+      "rent": 4295,
       "beds": 1,
-      "link": "https://gaetanirealestate.appfolio.com/listings/detail/beeef512-4109-4633-88cb-52c3dee6da1b",
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-large-bright-unit-in-cow/7926195328.html",
+      "img": "https://images.craigslist.org/00s0s_8k2cJfo99vg_0ak07K_600x450.jpg",
       "pet_policy": "unknown",
-      "parking": false,
-      "laundry": "in-unit",
+      "parking": true,
+      "laundry": "shared",
       "outdoor": false,
-      "score": 75,
+      "score": 70,
       "score_notes": [
         "Top-tier hood",
-        "In-unit laundry",
-        "PM site exclusive \u26a1"
+        "Parking"
       ]
     },
     {
@@ -310,44 +310,6 @@
         "Mid-tier hood",
         "Under $4k",
         "In-unit laundry"
-      ]
-    },
-    {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7924715338.html",
-      "source": "Craigslist",
-      "title": "Luxury Pacific Heights 1br Condo",
-      "address": "Luxury Pacific Heights 1br Condo",
-      "neighborhood": "Pacific Heights",
-      "rent": 4800,
-      "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7924715338.html",
-      "img": "https://images.craigslist.org/00a0a_4nTVKArQoNI_1761u8_600x450.jpg",
-      "pet_policy": "unknown",
-      "parking": false,
-      "laundry": "shared",
-      "outdoor": false,
-      "score": 65,
-      "score_notes": [
-        "Top-tier hood"
-      ]
-    },
-    {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-1br-1ba-apartment-cow/7926120321.html",
-      "source": "Craigslist",
-      "title": "1BR / 1BA Apartment \u2013 Cow Hollow \u2013 Top Floor Unit \u2013 Natural Light",
-      "address": "1BR / 1BA Apartment \u2013 Cow Hollow \u2013 Top Floor Unit \u2013 Natural Light",
-      "neighborhood": "Cow Hollow",
-      "rent": 4100,
-      "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-1br-1ba-apartment-cow/7926120321.html",
-      "img": "https://images.craigslist.org/00S0S_gryFcoo4jxu_0hd0cU_600x450.jpg",
-      "pet_policy": "unknown",
-      "parking": false,
-      "laundry": "shared",
-      "outdoor": false,
-      "score": 65,
-      "score_notes": [
-        "Top-tier hood"
       ]
     },
     {
