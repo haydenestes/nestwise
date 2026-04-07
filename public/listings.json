@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-07T09:09:35Z",
+  "updated": "2026-04-07T17:04:18Z",
   "listings": [
     {
       "id": "wavro-5495-$5,495/mo Russian Hi",
@@ -87,26 +87,6 @@
         "\ud83d\udc3e Pets OK",
         "Parking",
         "PM site exclusive \u26a1"
-      ]
-    },
-    {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-pacific-heights-one/7926072537.html",
-      "source": "Craigslist",
-      "title": "Pacific Heights One Bedroom | Hardwood Floors | Pets OK | Elevator",
-      "address": "Pacific Heights One Bedroom | Hardwood Floors | Pets OK | Elevator",
-      "neighborhood": "Pacific Heights",
-      "rent": 4250,
-      "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-pacific-heights-one/7926072537.html",
-      "img": "https://images.craigslist.org/00Z0Z_lakhczmi286_0lM0t2_600x450.jpg",
-      "pet_policy": "pets_ok",
-      "parking": false,
-      "laundry": "shared",
-      "outdoor": false,
-      "score": 85,
-      "score_notes": [
-        "Top-tier hood",
-        "\ud83d\udc3e Pets OK"
       ]
     },
     {
@@ -311,6 +291,25 @@
       ]
     },
     {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7924715338.html",
+      "source": "Craigslist",
+      "title": "Luxury Pacific Heights 1br Condo",
+      "address": "Luxury Pacific Heights 1br Condo",
+      "neighborhood": "Pacific Heights",
+      "rent": 4800,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7924715338.html",
+      "img": "https://images.craigslist.org/00a0a_4nTVKArQoNI_1761u8_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 65,
+      "score_notes": [
+        "Top-tier hood"
+      ]
+    },
+    {
       "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-1br-1ba-apartment-cow/7926120321.html",
       "source": "Craigslist",
       "title": "1BR / 1BA Apartment \u2013 Cow Hollow \u2013 Top Floor Unit \u2013 Natural Light",
@@ -320,44 +319,6 @@
       "beds": 1,
       "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-1br-1ba-apartment-cow/7926120321.html",
       "img": "https://images.craigslist.org/00S0S_gryFcoo4jxu_0hd0cU_600x450.jpg",
-      "pet_policy": "unknown",
-      "parking": false,
-      "laundry": "shared",
-      "outdoor": false,
-      "score": 65,
-      "score_notes": [
-        "Top-tier hood"
-      ]
-    },
-    {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7925574682.html",
-      "source": "Craigslist",
-      "title": "Luxury Pacific Heights 1br Condo",
-      "address": "Luxury Pacific Heights 1br Condo",
-      "neighborhood": "Pacific Heights",
-      "rent": 4900,
-      "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7925574682.html",
-      "img": "https://images.craigslist.org/00C0C_3aF09FqscPF_0lM0t2_600x450.jpg",
-      "pet_policy": "unknown",
-      "parking": false,
-      "laundry": "shared",
-      "outdoor": false,
-      "score": 65,
-      "score_notes": [
-        "Top-tier hood"
-      ]
-    },
-    {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-top-floor-two-bedroom-in/7926067600.html",
-      "source": "Craigslist",
-      "title": "Top Floor Two Bedroom in Lower Pac Heights | Shared Laundry | Views",
-      "address": "Top Floor Two Bedroom in Lower Pac Heights | Shared Laundry | Views",
-      "neighborhood": "Pacific Heights",
-      "rent": 4495,
-      "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-top-floor-two-bedroom-in/7926067600.html",
-      "img": "https://images.craigslist.org/00F0F_aTZLKJBT3rc_07K0ak_600x450.jpg",
       "pet_policy": "unknown",
       "parking": false,
       "laundry": "shared",
@@ -388,15 +349,15 @@
       ]
     },
     {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-1br-with-in-unit-d-and/7926086167.html",
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-tmlp-13-mo-landmark/7926181120.html",
       "source": "Craigslist",
-      "title": "1BR with In Unit W/D and Hardwood Floors in Nob Hill! Unit #308",
-      "address": "1BR with In Unit W/D and Hardwood Floors in Nob Hill! Unit #308",
-      "neighborhood": "Nob Hill",
-      "rent": 3720,
+      "title": "TMLP 13-mo. | Landmark Living in the Arts District, Near Hayes Valley.",
+      "address": "TMLP 13-mo. | Landmark Living in the Arts District, Near Hayes Valley.",
+      "neighborhood": "Hayes Valley",
+      "rent": 3927,
       "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-1br-with-in-unit-d-and/7926086167.html",
-      "img": "https://images.craigslist.org/00505_ftj6hC5tmx2_0CI0lM_600x450.jpg",
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-tmlp-13-mo-landmark/7926181120.html",
+      "img": "https://images.craigslist.org/00z0z_h3yz79H4EHF_0c6085_600x450.jpg",
       "pet_policy": "unknown",
       "parking": false,
       "laundry": "shared",
@@ -408,15 +369,15 @@
       ]
     },
     {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-elegant-1br-near-hayes/7926085682.html",
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-1br-with-in-unit-d-and/7926086167.html",
       "source": "Craigslist",
-      "title": "Elegant 1BR \u2013 Near Hayes Valley Boutiques & Dining! Unit #410",
-      "address": "Elegant 1BR \u2013 Near Hayes Valley Boutiques & Dining! Unit #410",
-      "neighborhood": "Hayes Valley",
-      "rent": 3790,
+      "title": "1BR with In Unit W/D and Hardwood Floors in Nob Hill! Unit #308",
+      "address": "1BR with In Unit W/D and Hardwood Floors in Nob Hill! Unit #308",
+      "neighborhood": "Nob Hill",
+      "rent": 3720,
       "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-elegant-1br-near-hayes/7926085682.html",
-      "img": "https://images.craigslist.org/00k0k_1JEDsCUGH82_0CI0lM_600x450.jpg",
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-1br-with-in-unit-d-and/7926086167.html",
+      "img": "https://images.craigslist.org/00505_ftj6hC5tmx2_0CI0lM_600x450.jpg",
       "pet_policy": "unknown",
       "parking": false,
       "laundry": "shared",
@@ -445,25 +406,6 @@
       "score_notes": [
         "Mid-tier hood",
         "2+ BR"
-      ]
-    },
-    {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-classic-1br-prime-nob/7926084919.html",
-      "source": "Craigslist",
-      "title": "Classic 1BR \u2013 Prime Nob Hill Location! Unit #1340-003",
-      "address": "Classic 1BR \u2013 Prime Nob Hill Location! Unit #1340-003",
-      "neighborhood": "Nob Hill",
-      "rent": 4345,
-      "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-classic-1br-prime-nob/7926084919.html",
-      "img": "https://images.craigslist.org/01717_ajo6e5YvxXt_0CI0lM_600x450.jpg",
-      "pet_policy": "unknown",
-      "parking": false,
-      "laundry": "shared",
-      "outdoor": false,
-      "score": 50,
-      "score_notes": [
-        "Mid-tier hood"
       ]
     },
     {
