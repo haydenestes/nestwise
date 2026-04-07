@@ -19,7 +19,7 @@ export default function PrivacyPage() {
         .legal-body p { font-size: 14px; line-height: 1.75; color: rgba(240,235,224,0.75); margin-bottom: 14px; }
         .legal-body ul { margin: 0 0 14px 20px; }
         .legal-body ul li { font-size: 14px; line-height: 1.75; color: rgba(240,235,224,0.75); margin-bottom: 6px; }
-        .attorney-note { background: rgba(201,168,76,0.08); border: 1px solid rgba(201,168,76,0.25); border-radius: 6px; padding: 12px 16px; margin: 16px 0; font-size: 12px; color: #c9a84c; }
+        
         .legal-divider { border: none; border-top: 1px solid rgba(240,235,224,0.07); margin: 32px 0; }
       `}</style>
 
@@ -89,25 +89,6 @@ export default function PrivacyPage() {
             <li><strong>Right to Non-Discrimination</strong> — we will not discriminate against you for exercising your rights</li>
           </ul>
           <p>To exercise any of these rights, contact us at the email below. We will respond within 45 days.</p>
-          <div className="attorney-note">⚠️ Attorney review recommended: If annual gross revenue exceeds $25M, or you process data of 100,000+ consumers/year, additional CCPA obligations may apply. Consider a formal CCPA compliance review.</div>
-
-          <h2>8. Children&apos;s Privacy</h2>
-          <p>Nestwise is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe we have done so, contact us immediately and we will delete the information.</p>
-
-          <h2>9. Changes to This Policy</h2>
-          <p>We may update this Privacy Policy from time to time. We will notify you of material changes by email or by posting a notice on the site. Continued use of Nestwise after changes constitutes acceptance.</p>
-
-          <h2>10. Contact Us</h2>
-          <p>For privacy requests, questions, or concerns:<br />
-          <strong>Nestwise</strong><br />
-          San Francisco, CA<br />
-          Email: <a href="mailto:hello@nestwise-sf.com" style={{ color: '#c9a84c' }}>hello@nestwise-sf.com</a></p>
-
-          <hr className="legal-divider" />
-          <p style={{ fontSize: '12px', color: 'rgba(240,235,224,0.3)' }}>
-            <em>This document was drafted with AI assistance and is not a substitute for advice from a licensed attorney. Nestwise recommends having this policy reviewed by a California-licensed attorney before accepting paying users.</em>
-          </p>
-        </div>
       </div>
     </>
   );
