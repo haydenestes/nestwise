@@ -296,8 +296,9 @@ export default function LandingPage() {
             pointer-events: none;
           }
           .hero-left > * { position: relative; z-index: 1; }
-          .hero-nav { margin-bottom: 40px; }
+          .hero-nav { margin-bottom: 40px; justify-content: space-between; }
           .hero-nav-links { display: none; }
+          .hero-signin { display: inline-block !important; }
           .hero-eyebrow { font-size: 9px; margin-bottom: 14px; }
           .hero-h1 { font-size: 32px; margin-bottom: 16px; }
           .hero-sub { font-size: 15px; max-width: 100%; margin-bottom: 24px; }

@@ -10,9 +10,6 @@ import { SF_NEIGHBORHOODS, UNIT_TYPES, PET_OPTIONS, AMENITIES, ALERT_TIMES } fro
 export default function CriteriaPage() {
   const router = useRouter();
   const [checkoutLoading, setCheckoutLoading] = React.useState(false);
-  const [promoCode, setPromoCode]             = React.useState('');
-  const [promoError, setPromoError]           = React.useState('');
-  const [showPromoInput, setShowPromoInput]   = React.useState(false);
   const {
     user,
     setAuthOpen,
@@ -38,32 +35,8 @@ export default function CriteriaPage() {
     }
 
     setCheckoutLoading(true);
-    setPromoError('');
 
-    // If promo code entered, try to redeem it first
-    if (promoCode.trim()) {
-      try {
-        const res = await fetch('/api/redeem-promo', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ code: promoCode.trim() }),
-        });
-        const data = await res.json();
-        if (res.ok && data.success) {
-          // Valid code — skip Stripe, go straight to search
-          router.push('/search');
-          return;
-        } else {
-          setPromoError(data.error || 'Invalid or expired code');
-          setCheckoutLoading(false);
-          return;
-        }
-      } catch {
-        setPromoError('Could not verify code. Please try again.');
-        setCheckoutLoading(false);
-        return;
-      }
-    }
+
 
     // No promo code — proceed to Stripe
     try {
@@ -344,32 +317,8 @@ export default function CriteriaPage() {
           </strong>{' '}
           &middot; <strong>{beds.join(', ') || 'Any size'}</strong>
         </div>
-        {/* Promo code */}
-        <div style={{ marginBottom: '12px' }}>
-          {!showPromoInput ? (
-            <button
-              type="button"
-              onClick={() => setShowPromoInput(true)}
-              style={{ background: 'none', border: 'none', color: 'rgba(240,235,224,0.5)', fontSize: '13px', cursor: 'pointer', padding: 0, textDecoration: 'underline' }}
-            >
-              Have a referral code?
-            </button>
-          ) : (
-            <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-              <input
-                type="text"
-                placeholder="Enter referral code"
-                value={promoCode}
-                onChange={e => { setPromoCode(e.target.value.toUpperCase()); setPromoError(''); }}
-                style={{ flex: 1, padding: '10px 14px', borderRadius: '8px', border: '1px solid rgba(240,235,224,0.2)', background: 'rgba(255,255,255,0.05)', color: '#f0ebe0', fontSize: '14px', letterSpacing: '0.05em' }}
-              />
-            </div>
-          )}
-          {promoError && <p style={{ color: '#ef4444', fontSize: '13px', marginTop: '6px' }}>{promoError}</p>}
-        </div>
-
         <button className="btn-primary" onClick={handleStartSearch} disabled={checkoutLoading}>
-          {checkoutLoading ? (promoCode ? 'Verifying code…' : 'Redirecting to checkout…') : 'Start My Search →'}
+          {checkoutLoading ? 'Redirecting to checkout…' : 'Start My Search →'}
         </button>
       </div>
     </div>
