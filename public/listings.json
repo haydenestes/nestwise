@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-07T17:04:18Z",
+  "updated": "2026-04-07T17:38:04Z",
   "listings": [
     {
       "id": "wavro-5495-$5,495/mo Russian Hi",
@@ -128,6 +128,27 @@
         "Top-tier hood",
         "Under $4k",
         "PM site exclusive \u26a1"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-remodeled-nob-hill-2br/7924392751.html",
+      "source": "Craigslist",
+      "title": "Remodeled Nob Hill 2BR (Flex 3BR) \u2013 W/D & Dishwasher, Pets OK",
+      "address": "Remodeled Nob Hill 2BR (Flex 3BR) \u2013 W/D & Dishwasher, Pets OK",
+      "neighborhood": "Nob Hill",
+      "rent": 5295,
+      "beds": 2,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-remodeled-nob-hill-2br/7924392751.html",
+      "img": "https://images.craigslist.org/00k0k_lq51859HwmI_0CI0lM_600x450.jpg",
+      "pet_policy": "pets_ok",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 75,
+      "score_notes": [
+        "Mid-tier hood",
+        "\ud83d\udc3e Pets OK",
+        "2+ BR"
       ]
     },
     {
@@ -271,23 +292,24 @@
       ]
     },
     {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-bright-2br-with-open/7926086728.html",
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-remodeled-1br-retreat-in/7925768076.html",
       "source": "Craigslist",
-      "title": "Bright 2BR with Open Vistas in Pacific Heights! Unit #602",
-      "address": "Bright 2BR with Open Vistas in Pacific Heights! Unit #602",
-      "neighborhood": "Pacific Heights",
-      "rent": 5395,
-      "beds": 2,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-bright-2br-with-open/7926086728.html",
-      "img": "https://images.craigslist.org/00u0u_3KTlzqWtq05_0CI0lM_600x450.jpg",
+      "title": "Remodeled 1BR Retreat | In-Unit Laundry | Quiet Nob Hill Location",
+      "address": "Remodeled 1BR Retreat | In-Unit Laundry | Quiet Nob Hill Location",
+      "neighborhood": "Nob Hill",
+      "rent": 3695,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-remodeled-1br-retreat-in/7925768076.html",
+      "img": "https://images.craigslist.org/00E0E_1s4k16C1rv_0CI0lM_600x450.jpg",
       "pet_policy": "unknown",
       "parking": false,
-      "laundry": "shared",
+      "laundry": "in-unit",
       "outdoor": false,
-      "score": 70,
+      "score": 65,
       "score_notes": [
-        "Top-tier hood",
-        "2+ BR"
+        "Mid-tier hood",
+        "Under $4k",
+        "In-unit laundry"
       ]
     },
     {
@@ -369,35 +391,15 @@
       ]
     },
     {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-1br-with-in-unit-d-and/7926086167.html",
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-charming-2br-flat-in/7924392646.html",
       "source": "Craigslist",
-      "title": "1BR with In Unit W/D and Hardwood Floors in Nob Hill! Unit #308",
-      "address": "1BR with In Unit W/D and Hardwood Floors in Nob Hill! Unit #308",
-      "neighborhood": "Nob Hill",
-      "rent": 3720,
-      "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-1br-with-in-unit-d-and/7926086167.html",
-      "img": "https://images.craigslist.org/00505_ftj6hC5tmx2_0CI0lM_600x450.jpg",
-      "pet_policy": "unknown",
-      "parking": false,
-      "laundry": "shared",
-      "outdoor": false,
-      "score": 60,
-      "score_notes": [
-        "Mid-tier hood",
-        "Under $4k"
-      ]
-    },
-    {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-2br-near-fillmore-dining/7926086685.html",
-      "source": "Craigslist",
-      "title": "2BR Near Fillmore Dining & Alta Plaza Park! Unit #407",
-      "address": "2BR Near Fillmore Dining & Alta Plaza Park! Unit #407",
-      "neighborhood": "Fillmore",
-      "rent": 5295,
+      "title": "Charming 2BR Flat in Prime Noe Valley with Views",
+      "address": "Charming 2BR Flat in Prime Noe Valley with Views",
+      "neighborhood": "Noe Valley",
+      "rent": 4695,
       "beds": 2,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-2br-near-fillmore-dining/7926086685.html",
-      "img": "https://images.craigslist.org/00X0X_fNGRp4Kc3ix_0CI0lM_600x450.jpg",
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-charming-2br-flat-in/7924392646.html",
+      "img": "https://images.craigslist.org/00d0d_h6SSOPDHYEd_0CI0lM_600x450.jpg",
       "pet_policy": "unknown",
       "parking": false,
       "laundry": "shared",
@@ -425,6 +427,27 @@
       "score_notes": [
         "Mid-tier hood",
         "PM site exclusive \u26a1"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-spacious-2br-2ba-with-in/7921280205.html",
+      "source": "Craigslist",
+      "title": "Spacious 2BR / 2BA with In-Unit Laundry in the Inner Richmond",
+      "address": "Spacious 2BR / 2BA with In-Unit Laundry in the Inner Richmond",
+      "neighborhood": "Inner Richmond",
+      "rent": 4795,
+      "beds": 2,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-spacious-2br-2ba-with-in/7921280205.html",
+      "img": "https://images.craigslist.org/00101_cIJR6qUdgn_0CI0lM_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "in-unit",
+      "outdoor": false,
+      "score": 45,
+      "score_notes": [
+        "Value hood",
+        "2+ BR",
+        "In-unit laundry"
       ]
     }
   ]
