@@ -77,12 +77,16 @@ export default function SignUpPage() {
         .auth-sub { font-size: 13px; color: rgba(240,235,224,0.45); margin-bottom: 32px; }
         .auth-field { margin-bottom: 16px; }
         .auth-field label { display: block; font-size: 11px; letter-spacing: 0.06em; color: rgba(240,235,224,0.5); text-transform: uppercase; margin-bottom: 6px; }
-        .auth-field input { width: 100%; background: rgba(240,235,224,0.04); border: 1px solid rgba(240,235,224,0.1); border-radius: 4px; padding: 10px 12px; color: #f0ebe0; font-size: 14px; font-family: 'Inter', sans-serif; outline: none; transition: border-color 0.2s; }
+        .auth-field input { width: 100%; background: rgba(240,235,224,0.04); border: 1px solid rgba(240,235,224,0.1); border-radius: 4px; padding: 12px 12px; min-height: 48px; color: #f0ebe0; font-size: 15px; font-family: 'Inter', sans-serif; outline: none; transition: border-color 0.2s; }
         .auth-field input:focus { border-color: rgba(201,168,76,0.4); }
         .auth-error { font-size: 12px; color: #f87171; margin-bottom: 16px; padding: 8px 12px; background: rgba(248,113,113,0.08); border-radius: 4px; border: 1px solid rgba(248,113,113,0.2); }
-        .auth-btn { width: 100%; background: #c9a84c; color: #0e0c0a; border: none; border-radius: 4px; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; padding: 13px; cursor: pointer; font-family: 'Inter', sans-serif; transition: background 0.2s; margin-top: 8px; }
+        .auth-btn { width: 100%; background: #c9a84c; color: #0e0c0a; border: none; border-radius: 4px; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; padding: 14px; min-height: 48px; cursor: pointer; font-family: 'Inter', sans-serif; transition: background 0.2s; margin-top: 8px; }
         .auth-btn:hover { background: #e8c97a; }
         .auth-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        @media (max-width: 480px) {
+          .auth-card { padding: 32px 20px; }
+          .auth-title { font-size: 24px; }
+        }
         .auth-footer { margin-top: 20px; text-align: center; font-size: 13px; color: rgba(240,235,224,0.4); }
         .auth-footer a { color: #c9a84c; text-decoration: none; cursor: pointer; }
         .auth-footer a:hover { text-decoration: underline; }

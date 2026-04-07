@@ -76,9 +76,10 @@ export default function SignInPage() {
           background: rgba(240,235,224,0.04);
           border: 1px solid rgba(240,235,224,0.1);
           border-radius: 4px;
-          padding: 10px 12px;
+          padding: 12px 12px;
+          min-height: 48px;
           color: #f0ebe0;
-          font-size: 14px;
+          font-size: 15px;
           font-family: 'Inter', sans-serif;
           outline: none;
           transition: border-color 0.2s;
@@ -99,11 +100,12 @@ export default function SignInPage() {
           color: #0e0c0a;
           border: none;
           border-radius: 4px;
-          font-size: 12px;
+          font-size: 13px;
           font-weight: 500;
           letter-spacing: 0.08em;
           text-transform: uppercase;
-          padding: 13px;
+          padding: 14px;
+          min-height: 48px;
           cursor: pointer;
           font-family: 'Inter', sans-serif;
           transition: background 0.2s;
@@ -111,6 +113,10 @@ export default function SignInPage() {
         }
         .auth-btn:hover { background: #e8c97a; }
         .auth-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        @media (max-width: 480px) {
+          .auth-card { padding: 32px 20px; }
+          .auth-title { font-size: 24px; }
+        }
         .auth-footer {
           margin-top: 20px;
           text-align: center;

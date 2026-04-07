@@ -49,36 +49,55 @@ export default function HowItWorksPage() {
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400;500&display=swap');
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         body { background: #0e0c0a; }
+        .hiw-nav { display: flex; align-items: center; justify-content: space-between; padding: 24px 48px; border-bottom: 1px solid rgba(240,235,224,0.07); }
+        .hiw-nav-links { display: flex; gap: 20px; align-items: center; }
+        .hiw-container { max-width: 720px; margin: 0 auto; padding: 64px 24px 80px; }
+        .hiw-h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 48px; font-weight: 300; color: #f0ebe0; line-height: 1.1; margin-bottom: 16px; }
+        .hiw-intro { font-size: 15px; color: rgba(240,235,224,0.55); line-height: 1.7; margin-bottom: 64px; max-width: 520px; }
+        .hiw-steps { margin-bottom: 64px; }
+        .hiw-step { display: flex; gap: 28px; margin-bottom: 40px; align-items: flex-start; }
+        .hiw-step:last-child { margin-bottom: 0; }
+        .hiw-cta-link { display: inline-block; background: #c9a84c; color: #0e0c0a; border-radius: 4px; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; padding: 14px 32px; text-decoration: none; }
+        @media (max-width: 768px) {
+          .hiw-nav { padding: 20px 20px; }
+          .hiw-nav-links { display: none; }
+          .hiw-container { padding: 36px 20px 60px; }
+          .hiw-h1 { font-size: 30px; }
+          .hiw-intro { font-size: 15px; margin-bottom: 40px; max-width: 100%; }
+          .hiw-steps { margin-bottom: 40px; }
+          .hiw-step { gap: 16px; margin-bottom: 28px; }
+          .hiw-cta-link { display: block; text-align: center; padding: 16px 24px; min-height: 48px; }
+        }
       `}</style>
       <div style={{ minHeight: '100vh', background: '#0e0c0a', color: '#f0ebe0', fontFamily: 'Inter, sans-serif' }}>
 
-        <nav style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '24px 48px', borderBottom: '1px solid rgba(240,235,224,0.07)' }}>
+        <nav className="hiw-nav">
           <Link href="/" style={{ fontSize: '13px', fontWeight: 500, letterSpacing: '0.18em', color: '#c9a84c', textTransform: 'uppercase', textDecoration: 'none' }}>Nestwise</Link>
-          <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+          <div className="hiw-nav-links">
             <Link href="/signup" style={{ fontSize: '12px', color: 'rgba(240,235,224,0.45)', textDecoration: 'none' }}>Sign up</Link>
             <Link href="/signin" style={{ fontSize: '12px', color: 'rgba(240,235,224,0.45)', textDecoration: 'none' }}>Sign in</Link>
           </div>
         </nav>
 
-        <div style={{ maxWidth: '720px', margin: '0 auto', padding: '64px 24px 80px' }}>
+        <div className="hiw-container">
 
           <div style={{ fontSize: '10px', letterSpacing: '0.22em', color: '#c9a84c', textTransform: 'uppercase', marginBottom: '14px' }}>How Nestwise Works</div>
-          <h1 style={{ fontFamily: 'Cormorant Garamond, Georgia, serif', fontSize: '48px', fontWeight: 300, color: '#f0ebe0', lineHeight: 1.1, marginBottom: '16px' }}>
+          <h1 className="hiw-h1">
             Find your SF apartment<br />before anyone else does.
           </h1>
-          <p style={{ fontSize: '15px', color: 'rgba(240,235,224,0.55)', lineHeight: 1.7, marginBottom: '64px', maxWidth: '520px' }}>
+          <p className="hiw-intro">
             The SF rental market is won and lost in hours. Nestwise gives you information before the competition — and tools to act faster when it matters.
           </p>
 
           {/* Steps */}
-          <div style={{ marginBottom: '64px' }}>
+          <div className="hiw-steps">
             {STEPS.map((step, i) => (
-              <div key={step.num} style={{ display: 'flex', gap: '28px', marginBottom: i < STEPS.length - 1 ? '40px' : 0, alignItems: 'flex-start' }}>
-                <div style={{ flexShrink: 0, width: '48px', height: '48px', border: '1px solid rgba(201,168,76,0.3)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'Cormorant Garamond, Georgia, serif', fontSize: '11px', color: '#c9a84c', letterSpacing: '0.05em' }}>
+              <div key={step.num} className="hiw-step">
+                <div style={{ flexShrink: 0, width: '44px', height: '44px', border: '1px solid rgba(201,168,76,0.3)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'Cormorant Garamond, Georgia, serif', fontSize: '11px', color: '#c9a84c', letterSpacing: '0.05em' }}>
                   {step.num}
                 </div>
-                <div style={{ flex: 1, paddingTop: '10px' }}>
-                  <div style={{ fontSize: '16px', fontWeight: 500, color: '#f0ebe0', marginBottom: '8px' }}>{step.title}</div>
+                <div style={{ flex: 1, paddingTop: '8px' }}>
+                  <div style={{ fontSize: '15px', fontWeight: 500, color: '#f0ebe0', marginBottom: '8px' }}>{step.title}</div>
                   <div style={{ fontSize: '14px', color: 'rgba(240,235,224,0.6)', lineHeight: 1.7 }}>{step.body}</div>
                 </div>
               </div>
@@ -99,12 +118,7 @@ export default function HowItWorksPage() {
 
           {/* CTA */}
           <div style={{ textAlign: 'center' }}>
-            <Link href="/search" style={{
-              display: 'inline-block', background: '#c9a84c', color: '#0e0c0a',
-              borderRadius: '4px', fontSize: '12px', fontWeight: 500,
-              letterSpacing: '0.08em', textTransform: 'uppercase',
-              padding: '14px 32px', textDecoration: 'none', marginBottom: '14px',
-            }}>
+            <Link href="/search" className="hiw-cta-link">
               Start my search →
             </Link>
             <div style={{ fontSize: '12px', color: 'rgba(240,235,224,0.3)', marginTop: '10px' }}>

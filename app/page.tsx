@@ -280,8 +280,19 @@ export default function LandingPage() {
         @media (max-width: 768px) {
           .hero-root { grid-template-columns: 1fr; }
           .hero-right { display: none; }
-          .hero-left { padding: 28px 24px 40px; }
-          .hero-h1 { font-size: 38px; }
+          .hero-left { padding: 24px 20px 40px; }
+          .hero-nav { margin-bottom: 40px; }
+          .hero-nav-links { display: none; }
+          .hero-eyebrow { font-size: 9px; margin-bottom: 14px; }
+          .hero-h1 { font-size: 32px; margin-bottom: 16px; }
+          .hero-sub { font-size: 15px; max-width: 100%; margin-bottom: 24px; }
+          .hero-pills { gap: 6px; margin-bottom: 28px; }
+          .hero-cta { flex-direction: column; align-items: stretch; gap: 12px; margin-bottom: 40px; }
+          .btn-primary-hero { width: 100%; text-align: center; min-height: 48px; font-size: 13px; padding: 14px 24px; }
+          .btn-ghost-hero { text-align: center; min-height: 48px; line-height: 48px; padding: 0; font-size: 13px; }
+          .hero-stats { flex-wrap: wrap; gap: 16px; padding-top: 24px; }
+          .hero-stat { flex: 0 0 calc(50% - 8px); padding-right: 0; border-right: none; margin-right: 0; }
+          .stat-num { font-size: 22px; }
         }
       `}</style>
 

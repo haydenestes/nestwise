@@ -673,7 +673,13 @@ body {
   gap: 24px;
   flex-wrap: wrap;
 }
-@media (max-width: 600px) { .dash-header { padding: 28px 20px; } }
+@media (max-width: 600px) {
+  .dash-header { padding: 24px 20px; flex-direction: column; gap: 20px; }
+  .dash-greeting { font-size: 26px; }
+  .dash-kpis { gap: 16px; }
+  .kpi { text-align: left; }
+  .kpi-num { font-size: 24px; }
+}
 .dash-greeting {
   font-family: 'Cormorant Garamond', serif;
   font-size: 32px;
@@ -713,12 +719,17 @@ body {
   justify-content: space-between;
   margin-bottom: 20px;
   gap: 12px;
+  flex-wrap: wrap;
 }
 .dash-section-title {
   font-family: 'Cormorant Garamond', serif;
   font-size: 26px;
   font-weight: 500;
   color: var(--ink);
+}
+@media (max-width: 600px) {
+  .dash-section-title { font-size: 22px; }
+  .dash-body { padding: 28px 16px 60px; }
 }
 .section-badge {
   display: inline-flex;

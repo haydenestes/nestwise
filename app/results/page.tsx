@@ -95,10 +95,21 @@ function ResultsInner() {
         .tag-muted { background: rgba(240,235,224,0.06); color: rgba(240,235,224,0.45); }
         .tag-gold { background: rgba(201,168,76,0.1); color: #c9a84c; }
         .card-actions { display: flex; gap: 8px; }
-        .btn-action { flex: 1; padding: 8px; border-radius: 4px; font-size: 11px; font-family: Inter,sans-serif; cursor: pointer; letter-spacing: 0.04em; border: 1px solid rgba(240,235,224,0.15); background: rgba(240,235,224,0.04); color: rgba(240,235,224,0.6); transition: all 0.15s; }
+        .btn-action { flex: 1; padding: 8px; border-radius: 4px; font-size: 11px; font-family: Inter,sans-serif; cursor: pointer; letter-spacing: 0.04em; border: 1px solid rgba(240,235,224,0.15); background: rgba(240,235,224,0.04); color: rgba(240,235,224,0.6); transition: all 0.15s; min-height: 44px; }
         .btn-action:hover { border-color: #c9a84c; color: #c9a84c; }
         .dom-new { color: #4ade80; font-weight: 500; }
         .dom-old { color: rgba(240,235,224,0.35); }
+        .results-nav { display: flex; align-items: center; justify-content: space-between; padding: 20px 40px; border-bottom: 1px solid rgba(240,235,224,0.07); }
+        .results-h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 36px; font-weight: 300; color: #f0ebe0; margin-bottom: 12px; }
+        .results-sort-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+        @media (max-width: 768px) {
+          .results-nav { padding: 16px 20px; }
+          .results-h1 { font-size: 24px; margin-bottom: 10px; }
+          .results-sort-row { gap: 6px; }
+        }
+        @media (max-width: 600px) {
+          .card-body { padding: 14px; }
+        }
       `}</style>
 
       {showPaywall && <PaywallModal onClose={() => setShowPaywall(false)} />}
@@ -106,18 +117,18 @@ function ResultsInner() {
       <div style={{ minHeight: '100vh', background: '#0e0c0a', color: '#f0ebe0', fontFamily: 'Inter, sans-serif' }}>
 
         {/* Nav */}
-        <nav style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '20px 40px', borderBottom: '1px solid rgba(240,235,224,0.07)' }}>
+        <nav className="results-nav">
           <button onClick={() => router.push('/')} style={{ background: 'none', border: 'none', fontSize: '13px', fontWeight: 500, letterSpacing: '0.18em', color: '#c9a84c', textTransform: 'uppercase', cursor: 'pointer', fontFamily: 'Inter, sans-serif' }}>Nestwise</button>
-          <button onClick={() => router.push('/search')} style={{ background: 'none', border: '1px solid rgba(201,168,76,0.3)', color: 'rgba(240,235,224,0.6)', borderRadius: '4px', fontSize: '12px', padding: '6px 14px', cursor: 'pointer', fontFamily: 'Inter, sans-serif' }}>
+          <button onClick={() => router.push('/search')} style={{ background: 'none', border: '1px solid rgba(201,168,76,0.3)', color: 'rgba(240,235,224,0.6)', borderRadius: '4px', fontSize: '12px', padding: '6px 14px', cursor: 'pointer', fontFamily: 'Inter, sans-serif', minHeight: '44px' }}>
             New search
           </button>
         </nav>
 
-        <div style={{ maxWidth: '1080px', margin: '0 auto', padding: '36px 24px 80px' }}>
+        <div style={{ maxWidth: '1080px', margin: '0 auto', padding: '36px 20px 80px' }}>
 
           {/* Header */}
           <div style={{ marginBottom: '28px' }}>
-            <h1 style={{ fontFamily: 'Cormorant Garamond, Georgia, serif', fontSize: '36px', fontWeight: 300, color: '#f0ebe0', marginBottom: '12px' }}>
+            <h1 className="results-h1">
               {listings.length} homes match your criteria
             </h1>
 
@@ -134,7 +145,7 @@ function ResultsInner() {
             </div>
 
             {/* Sort */}
-            <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+            <div className="results-sort-row">
               <span style={{ fontSize: '11px', color: 'rgba(240,235,224,0.35)', marginRight: '4px' }}>Sort:</span>
               {[
                 { key: 'score', label: 'Best match' },
