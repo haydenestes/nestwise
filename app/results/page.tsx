@@ -3,7 +3,10 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { MOCK_LISTINGS, MockListing } from '@/lib/mockListings';
+import { ZillowListing } from '@/lib/zillow';
 import { scoreAndSort, SearchCriteria } from '@/lib/scoring';
+
+type AnyListing = MockListing | ZillowListing;
 import PaywallModal from '@/components/PaywallModal';
 
 type SortKey = 'score' | 'newest' | 'price-asc' | 'price-desc';
@@ -11,7 +14,8 @@ type SortKey = 'score' | 'newest' | 'price-asc' | 'price-desc';
 function ResultsInner() {
   const router = useRouter();
   const params = useSearchParams();
-  const [listings, setListings] = useState<MockListing[]>([]);
+  const [listings, setListings] = useState<AnyListing[]>([]);
+  const [dataSource, setDataSource] = useState<string>('mock');
   const [criteria, setCriteria] = useState<SearchCriteria | null>(null);
   const [sort, setSort] = useState<SortKey>('score');
   const [showPaywall, setShowPaywall] = useState(false);
@@ -23,8 +27,28 @@ function ResultsInner() {
       try {
         const c: SearchCriteria = JSON.parse(raw);
         setCriteria(c);
-        const scored = scoreAndSort(MOCK_LISTINGS, c);
-        setListings(scored);
+
+        // Try live Zillow data first, fall back to mock
+        const fetchListings = async () => {
+          try {
+            const qs = new URLSearchParams();
+            if (c.maxPrice)      qs.set('maxPrice', String(c.maxPrice));
+            if (c.minPrice)      qs.set('minPrice', String(c.minPrice));
+            if (c.beds?.length)  qs.set('beds', c.beds[0] === '1BR' ? '1' : c.beds[0] === '2BR' ? '2' : c.beds[0] === '3BR+' ? '3' : '0');
+            if (c.neighborhoods?.length) qs.set('neighborhoods', c.neighborhoods.join(','));
+
+            const res = await fetch(`/api/listings?${qs.toString()}`);
+            const { listings: fetched, source } = await res.json();
+            setDataSource(source);
+            const scored = scoreAndSort(fetched, c);
+            setListings(scored);
+          } catch {
+            const scored = scoreAndSort(MOCK_LISTINGS, c);
+            setListings(scored);
+            setDataSource('mock');
+          }
+        };
+        fetchListings();
         setSearchCount(prev => {
           const next = prev + 1;
           if (next > 1) setShowPaywall(true);
