@@ -9,11 +9,11 @@ import { SF_NEIGHBORHOODS, UNIT_TYPES, PET_OPTIONS, AMENITIES, ALERT_TIMES } fro
 
 export default function CriteriaPage() {
   const router = useRouter();
-  const [checkoutLoading, setCheckoutLoading] = React.useState(false);
-  const [step, setStep] = React.useState<'criteria' | 'review'>('criteria');
-  const [promoCode, setPromoCode] = React.useState('');
-  const [promoError, setPromoError] = React.useState('');
-  const [promoLoading, setPromoLoading] = React.useState(false);
+  const [loading, setLoading] = React.useState(false);
+  const [step, setStep] = React.useState<'criteria' | 'notifications'>('criteria');
+  const [instantAlertsLocal, setInstantAlertsLocal] = React.useState(true);
+  const [digestEnabledLocal, setDigestEnabledLocal] = React.useState(true);
+  const [selectedTimesLocal, setSelectedTimesLocal] = React.useState<string[]>(['daily']);
   const {
     user,
     setAuthOpen,
@@ -31,69 +31,68 @@ export default function CriteriaPage() {
     email, setEmail,
   } = useApp();
 
-  async function handleStartSearch() {
+  async function handleContinue() {
     if (!email) {
       setAuthMode('signup');
       setAuthOpen(true);
       return;
     }
 
-    setStep('review');
+    setStep('notifications');
   }
 
-  async function handlePromoSubmit() {
-    if (!promoCode.trim()) {
-      // No code — go straight to Stripe
-      goToCheckout();
-      return;
-    }
-
-    setPromoLoading(true);
-    setPromoError('');
-
+  async function handleFinish() {
+    setLoading(true);
     try {
-      const res = await fetch('/api/redeem-promo', {
+      // Save preferences to user profile
+      const res = await fetch('/api/save-preferences', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ code: promoCode.trim() }),
+        body: JSON.stringify({
+          email,
+          criteria: { minRent, maxRent, beds, neighborhoods: hoods, pet, amenities },
+          notifications: {
+            instant_alerts: instantAlertsLocal,
+            digest_enabled: digestEnabledLocal,
+            digest_times: selectedTimesLocal,
+          },
+        }),
       });
-      const data = await res.json();
-      if (res.ok && data.success) {
-        // Valid promo — skip Stripe, go straight to search
-        router.push('/search');
-      } else {
-        setPromoError(data.error || 'Invalid or expired code');
-      }
-    } catch {
-      setPromoError('Could not verify code. Please try again.');
-    } finally {
-      setPromoLoading(false);
-    }
-  }
 
-  async function goToCheckout() {
-    setCheckoutLoading(true);
-    try {
-      const res = await fetch('/api/checkout', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
-      });
-      const data = await res.json();
-      if (data.url) {
-        window.location.href = data.url;
+      if (res.ok) {
+        router.push('/success');
       } else {
-        alert('Something went wrong. Please try again.');
-        setCheckoutLoading(false);
+        alert('Error saving preferences. Please try again.');
       }
     } catch {
       alert('Something went wrong. Please try again.');
-      setCheckoutLoading(false);
+    } finally {
+      setLoading(false);
     }
   }
 
   return (
-    <div className="criteria-page">
+    <div className="criteria-page" style={{ background: '#f8f7f5', color: '#1e1e1e', minHeight: '100vh' }}>
+      <style>{`
+        .criteria-page { background: #f8f7f5; color: #1e1e1e; }
+        .criteria-hero { background: #f8f7f5; }
+        .criteria-title { color: #1e1e1e; }
+        .criteria-sub { color: #555; }
+        .card { background: #ffffff; border: 1px solid #e5e0d8; color: #1e1e1e; }
+        .card-eyebrow { color: #999; }
+        .card-title { color: #1e1e1e; }
+        .card-desc { color: #666; }
+        .pill { background: rgba(30,30,30,0.08); border: 1px solid #ddd; color: #1e1e1e; }
+        .pill.on { background: #6b8f71; color: #fff; border-color: #6b8f71; }
+        .hood-card { background: #fff; border: 1px solid #ddd; color: #1e1e1e; }
+        .hood-card.on { border-color: #6b8f71; background: #f5f9f7; }
+        .hood-name { color: #1e1e1e; }
+        .hood-desc { color: #666; }
+        input, select { background: #fff; color: #1e1e1e; border: 1px solid #ddd; }
+        input::placeholder { color: #999; }
+        .cta-bar { background: #fff; border-top: 1px solid #e5e0d8; color: #1e1e1e; }
+        .cta-bar-meta { color: #555; }
+      `}</style>
       <Nav />
 
       {/* Hero */}
@@ -353,50 +352,94 @@ export default function CriteriaPage() {
               </strong>{' '}
               &middot; <strong>{beds.join(', ') || 'Any size'}</strong>
             </div>
-            <button className="btn-primary" onClick={handleStartSearch} disabled={checkoutLoading}>
-              {checkoutLoading ? 'Loading…' : 'Continue →'}
+            <button className="btn-primary" onClick={handleContinue} disabled={loading} style={{ background: '#6b8f71' }}>
+              {loading ? 'Loading…' : 'Continue →'}
             </button>
           </>
         ) : (
           <>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', flex: 1 }}>
-              <div>
-                <label style={{ display: 'block', fontSize: '13px', fontWeight: 500, marginBottom: '8px', color: 'rgba(240,235,224,0.7)' }}>
-                  Have a referral code?
-                </label>
-                <input
-                  type="text"
-                  placeholder="Enter code (e.g. DAISY2026)"
-                  value={promoCode}
-                  onChange={(e) => { setPromoCode(e.target.value.toUpperCase()); setPromoError(''); }}
-                  style={{
-                    width: '100%',
-                    padding: '12px 16px',
-                    borderRadius: '8px',
-                    border: '1px solid rgba(240,235,224,0.2)',
-                    background: 'rgba(255,255,255,0.05)',
-                    color: '#f0ebe0',
-                    fontSize: '14px',
-                    letterSpacing: '0.05em',
-                    boxSizing: 'border-box',
-                  }}
-                />
-                {promoError && <div style={{ fontSize: '12px', color: '#ef4444', marginTop: '6px' }}>{promoError}</div>}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', flex: 1 }}>
+              <div style={{ borderTop: '1px solid #e5e0d8', paddingTop: '20px' }}>
+                <div style={{ fontSize: '16px', fontWeight: 600, marginBottom: '16px', color: '#1e1e1e' }}>
+                  Notification Preferences
+                </div>
+
+                {/* Instant alerts toggle */}
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px' }}>
+                  <label style={{ fontSize: '14px', fontWeight: 500, color: '#1e1e1e' }}>
+                    Instant alerts for 90+ match score
+                  </label>
+                  <input
+                    type="checkbox"
+                    checked={instantAlertsLocal}
+                    onChange={(e) => setInstantAlertsLocal(e.target.checked)}
+                    style={{ width: '20px', height: '20px', cursor: 'pointer' }}
+                  />
+                </div>
+
+                {/* Digest toggle */}
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px' }}>
+                  <label style={{ fontSize: '14px', fontWeight: 500, color: '#1e1e1e' }}>
+                    Digest emails
+                  </label>
+                  <input
+                    type="checkbox"
+                    checked={digestEnabledLocal}
+                    onChange={(e) => setDigestEnabledLocal(e.target.checked)}
+                    style={{ width: '20px', height: '20px', cursor: 'pointer' }}
+                  />
+                </div>
+
+                {/* Digest times */}
+                {digestEnabledLocal && (
+                  <div style={{ marginTop: '16px', paddingTop: '16px', borderTop: '1px solid #e5e0d8' }}>
+                    <label style={{ display: 'block', fontSize: '13px', fontWeight: 500, marginBottom: '12px', color: '#666' }}>
+                      When to receive digests:
+                    </label>
+                    <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+                      {['9am', '5pm', 'daily', 'twice-daily'].map((time) => (
+                        <button
+                          key={time}
+                          onClick={() => {
+                            if (selectedTimesLocal.includes(time)) {
+                              setSelectedTimesLocal(selectedTimesLocal.filter(t => t !== time));
+                            } else {
+                              setSelectedTimesLocal([...selectedTimesLocal, time]);
+                            }
+                          }}
+                          style={{
+                            padding: '8px 14px',
+                            borderRadius: '6px',
+                            border: selectedTimesLocal.includes(time) ? '1px solid #6b8f71' : '1px solid #ddd',
+                            background: selectedTimesLocal.includes(time) ? '#6b8f71' : '#fff',
+                            color: selectedTimesLocal.includes(time) ? '#fff' : '#1e1e1e',
+                            fontSize: '13px',
+                            cursor: 'pointer',
+                            fontWeight: 500,
+                          }}
+                        >
+                          {time === '9am' ? '9 AM' : time === '5pm' ? '5 PM' : time === 'daily' ? 'Daily' : 'Twice daily'}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
+
               <button
                 className="btn-primary"
-                onClick={handlePromoSubmit}
-                disabled={promoLoading || checkoutLoading}
-                style={{ width: '100%' }}
+                onClick={handleFinish}
+                disabled={loading}
+                style={{ width: '100%', background: '#6b8f71' }}
               >
-                {promoLoading ? 'Verifying…' : checkoutLoading ? 'Redirecting…' : promoCode ? 'Apply Code →' : 'Proceed to Payment →'}
+                {loading ? 'Setting up…' : 'Start Receiving Alerts →'}
               </button>
               <button
                 onClick={() => setStep('criteria')}
                 style={{
                   background: 'none',
                   border: 'none',
-                  color: 'rgba(240,235,224,0.5)',
+                  color: '#999',
                   fontSize: '13px',
                   cursor: 'pointer',
                   padding: 0,
