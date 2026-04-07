@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-07T03:08:51Z",
+  "updated": "2026-04-07T09:09:35Z",
   "listings": [
     {
       "id": "wavro-5495-$5,495/mo Russian Hi",
@@ -171,26 +171,6 @@
       ]
     },
     {
-      "id": "https://chandlerproperties.com/rental-listings/?lid=fa588810-85b5-48d3-8075-e833c15b947b",
-      "source": "Chandler Properties",
-      "title": "$4,150 815A Kansas Street , San Francisco, CA 94107 Availabl",
-      "address": "$4,150 815A Kansas Street , San Francisco, CA 94107 Availabl",
-      "neighborhood": "Pacific Heights",
-      "rent": 4150,
-      "beds": 2,
-      "link": "https://chandlerproperties.com/rental-listings/?lid=fa588810-85b5-48d3-8075-e833c15b947b",
-      "pet_policy": "unknown",
-      "parking": false,
-      "laundry": "shared",
-      "outdoor": false,
-      "score": 75,
-      "score_notes": [
-        "Top-tier hood",
-        "2+ BR",
-        "PM site exclusive \u26a1"
-      ]
-    },
-    {
       "id": "https://www.relisto.com/rentals/363547388-2242-washington-st-san-francisco-ca-94115/",
       "source": "ReLISTO",
       "title": "2242 Washington St.",
@@ -331,22 +311,41 @@
       ]
     },
     {
-      "id": "https://chandlerproperties.com/rental-listings/?lid=92e70ec6-0356-4812-a6c9-2f555355c6a4",
-      "source": "Chandler Properties",
-      "title": "$4,595 2121 26th Street #201, San Francisco, CA 94107 Availa",
-      "address": "$4,595 2121 26th Street #201, San Francisco, CA 94107 Availa",
-      "neighborhood": "Pacific Heights",
-      "rent": 4595,
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-1br-1ba-apartment-cow/7926120321.html",
+      "source": "Craigslist",
+      "title": "1BR / 1BA Apartment \u2013 Cow Hollow \u2013 Top Floor Unit \u2013 Natural Light",
+      "address": "1BR / 1BA Apartment \u2013 Cow Hollow \u2013 Top Floor Unit \u2013 Natural Light",
+      "neighborhood": "Cow Hollow",
+      "rent": 4100,
       "beds": 1,
-      "link": "https://chandlerproperties.com/rental-listings/?lid=92e70ec6-0356-4812-a6c9-2f555355c6a4",
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-1br-1ba-apartment-cow/7926120321.html",
+      "img": "https://images.craigslist.org/00S0S_gryFcoo4jxu_0hd0cU_600x450.jpg",
       "pet_policy": "unknown",
       "parking": false,
       "laundry": "shared",
       "outdoor": false,
-      "score": 70,
+      "score": 65,
       "score_notes": [
-        "Top-tier hood",
-        "PM site exclusive \u26a1"
+        "Top-tier hood"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7925574682.html",
+      "source": "Craigslist",
+      "title": "Luxury Pacific Heights 1br Condo",
+      "address": "Luxury Pacific Heights 1br Condo",
+      "neighborhood": "Pacific Heights",
+      "rent": 4900,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7925574682.html",
+      "img": "https://images.craigslist.org/00C0C_3aF09FqscPF_0lM0t2_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 65,
+      "score_notes": [
+        "Top-tier hood"
       ]
     },
     {
