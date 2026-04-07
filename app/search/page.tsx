@@ -65,17 +65,29 @@ export default function SearchPage() {
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { background: #0e0c0a; }
         input[type=range] { accent-color: #c9a84c; }
+        .search-nav { display: flex; align-items: center; justify-content: space-between; padding: 24px 48px; border-bottom: 1px solid rgba(240,235,224,0.07); }
+        .search-container { max-width: 680px; margin: 0 auto; padding: 48px 24px 0; }
+        .search-h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 42px; font-weight: 300; color: #f0ebe0; margin-bottom: 8px; }
+        .search-budget-row { display: flex; gap: 16px; align-items: center; }
+        .search-cta { width: 100%; background: #c9a84c; color: #0e0c0a; border: none; border-radius: 4px; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; padding: 16px; cursor: pointer; font-family: Inter, sans-serif; min-height: 48px; }
+        @media (max-width: 768px) {
+          .search-nav { padding: 20px 20px; }
+          .search-container { padding: 32px 20px 0; }
+          .search-h1 { font-size: 28px; }
+          .search-budget-row { flex-direction: column; gap: 12px; }
+          .search-budget-row > div { width: 100%; }
+        }
       `}</style>
       <div style={{ minHeight: '100vh', background: '#0e0c0a', color: '#f0ebe0', fontFamily: 'Inter, sans-serif', padding: '0 0 80px' }}>
 
         {/* Nav */}
-        <nav style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '24px 48px', borderBottom: '1px solid rgba(240,235,224,0.07)' }}>
+        <nav className="search-nav">
           <button onClick={() => router.push('/')} style={{ background: 'none', border: 'none', fontSize: '13px', fontWeight: 500, letterSpacing: '0.18em', color: '#c9a84c', textTransform: 'uppercase', cursor: 'pointer', fontFamily: 'Inter, sans-serif' }}>Nestwise</button>
         </nav>
 
-        <div style={{ maxWidth: '680px', margin: '0 auto', padding: '48px 24px 0' }}>
+        <div className="search-container">
           <div style={{ fontSize: '10px', letterSpacing: '0.22em', color: '#c9a84c', textTransform: 'uppercase', marginBottom: '12px' }}>Your Search</div>
-          <h1 style={{ fontFamily: 'Cormorant Garamond, Georgia, serif', fontSize: '42px', fontWeight: 300, color: '#f0ebe0', marginBottom: '8px' }}>
+          <h1 className="search-h1">
             Tell us what you need.
           </h1>
           <p style={{ fontSize: '14px', color: 'rgba(240,235,224,0.5)', marginBottom: '40px', lineHeight: 1.6 }}>
@@ -95,7 +107,7 @@ export default function SearchPage() {
             <div style={{ fontSize: '11px', letterSpacing: '0.08em', color: 'rgba(240,235,224,0.5)', textTransform: 'uppercase', marginBottom: '12px' }}>
               Monthly Budget — <span style={{ color: '#c9a84c' }}>${minPrice.toLocaleString()} – ${maxPrice.toLocaleString()}</span>
             </div>
-            <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
+            <div className="search-budget-row">
               <div style={{ flex: 1 }}>
                 <div style={{ fontSize: '11px', color: 'rgba(240,235,224,0.35)', marginBottom: '6px' }}>Min</div>
                 <input type="range" min={1500} max={7000} step={100} value={minPrice}
@@ -123,7 +135,7 @@ export default function SearchPage() {
           <div style={{ marginBottom: '32px' }}>
             <div style={{ fontSize: '11px', letterSpacing: '0.08em', color: 'rgba(240,235,224,0.5)', textTransform: 'uppercase', marginBottom: '12px' }}>Pets</div>
             <div style={{ display: 'flex', gap: '8px' }}>
-              {pill('🐕 Yes, I have a dog', pets === true, () => setPets(true))}
+              {pill('🐾 Yes, I have pets', pets === true, () => setPets(true))}
               {pill('No pets', pets === false, () => setPets(false))}
             </div>
           </div>
@@ -147,15 +159,7 @@ export default function SearchPage() {
           </div>
 
           {/* CTA */}
-          <button onClick={handleSearch} style={{
-            width: '100%',
-            background: '#c9a84c', color: '#0e0c0a',
-            border: 'none', borderRadius: '4px',
-            fontSize: '13px', fontWeight: 500,
-            letterSpacing: '0.08em', textTransform: 'uppercase',
-            padding: '16px', cursor: 'pointer',
-            fontFamily: 'Inter, sans-serif',
-          }}>
+          <button onClick={handleSearch} className="search-cta">
             Find my home →
           </button>
         </div>
