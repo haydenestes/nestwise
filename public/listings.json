@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-04T16:19:43Z",
+  "updated": "2026-04-07T03:08:51Z",
   "listings": [
     {
       "id": "wavro-5495-$5,495/mo Russian Hi",
@@ -90,6 +90,26 @@
       ]
     },
     {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-pacific-heights-one/7926072537.html",
+      "source": "Craigslist",
+      "title": "Pacific Heights One Bedroom | Hardwood Floors | Pets OK | Elevator",
+      "address": "Pacific Heights One Bedroom | Hardwood Floors | Pets OK | Elevator",
+      "neighborhood": "Pacific Heights",
+      "rent": 4250,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-pacific-heights-one/7926072537.html",
+      "img": "https://images.craigslist.org/00Z0Z_lakhczmi286_0lM0t2_600x450.jpg",
+      "pet_policy": "pets_ok",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 85,
+      "score_notes": [
+        "Top-tier hood",
+        "\ud83d\udc3e Pets OK"
+      ]
+    },
+    {
       "id": "https://gaetanirealestate.appfolio.com/listings/detail/01973f68-1843-4195-a6b4-ada14fe7d320",
       "source": "Gaetani Real Estate",
       "title": "1560 Sacramento St",
@@ -111,27 +131,6 @@
       ]
     },
     {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-top-floor-2br-pacific/7925506726.html",
-      "source": "Craigslist",
-      "title": "Top-Floor 2BR | Pacific Heights/Japantown | Dishwasher | Pet-Friendly",
-      "address": "Top-Floor 2BR | Pacific Heights/Japantown | Dishwasher | Pet-Friendly",
-      "neighborhood": "Pacific Heights",
-      "rent": 3995,
-      "beds": 2,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-top-floor-2br-pacific/7925506726.html",
-      "img": "https://images.craigslist.org/01616_a1LxmzStv4w_0CI0lM_600x450.jpg",
-      "pet_policy": "unknown",
-      "parking": false,
-      "laundry": "shared",
-      "outdoor": false,
-      "score": 80,
-      "score_notes": [
-        "Top-tier hood",
-        "Under $4k",
-        "2+ BR"
-      ]
-    },
-    {
       "id": "https://chandlerproperties.com/rental-listings/?lid=c9f46c1e-0958-45be-8d33-5b0314514cbd",
       "source": "Chandler Properties",
       "title": "650 Alvarado Street, #",
@@ -149,27 +148,6 @@
         "Top-tier hood",
         "Under $4k",
         "PM site exclusive \u26a1"
-      ]
-    },
-    {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-remodeled-top-floor-1br/7925441620.html",
-      "source": "Craigslist",
-      "title": "Remodeled Top-Floor 1BR in Hayes Valley, In-Unit Laundry, Pet Friendly",
-      "address": "Remodeled Top-Floor 1BR in Hayes Valley, In-Unit Laundry, Pet Friendly",
-      "neighborhood": "Hayes Valley",
-      "rent": 4195,
-      "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-remodeled-top-floor-1br/7925441620.html",
-      "img": "https://images.craigslist.org/00r0r_91UdBdWMxDH_0CI0lM_600x450.jpg",
-      "pet_policy": "pets_ok",
-      "parking": false,
-      "laundry": "in-unit",
-      "outdoor": false,
-      "score": 75,
-      "score_notes": [
-        "Mid-tier hood",
-        "\ud83d\udc3e Pets OK",
-        "In-unit laundry"
       ]
     },
     {
@@ -293,26 +271,6 @@
       ]
     },
     {
-      "id": "https://www.relisto.com/rentals/304275658-1565-sacramento-st-6-san-francisco-ca-94109/",
-      "source": "ReLISTO",
-      "title": "1565 Sacramento St.",
-      "address": "1565 Sacramento St.",
-      "neighborhood": "Russian Hill",
-      "rent": 5195,
-      "beds": 2,
-      "link": "https://www.relisto.com/rentals/304275658-1565-sacramento-st-6-san-francisco-ca-94109/",
-      "pet_policy": "unknown",
-      "parking": false,
-      "laundry": "shared",
-      "outdoor": false,
-      "score": 75,
-      "score_notes": [
-        "Top-tier hood",
-        "2+ BR",
-        "PM site exclusive \u26a1"
-      ]
-    },
-    {
       "id": "wavro-4500-$4,500/mo Russian Hi",
       "source": "J. Wavro Associates",
       "title": "$4,500/mo Russian Hill Russian Hill  Junior 1 Bed Condo with Parking and Storage",
@@ -353,6 +311,26 @@
       ]
     },
     {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-bright-2br-with-open/7926086728.html",
+      "source": "Craigslist",
+      "title": "Bright 2BR with Open Vistas in Pacific Heights! Unit #602",
+      "address": "Bright 2BR with Open Vistas in Pacific Heights! Unit #602",
+      "neighborhood": "Pacific Heights",
+      "rent": 5395,
+      "beds": 2,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-bright-2br-with-open/7926086728.html",
+      "img": "https://images.craigslist.org/00u0u_3KTlzqWtq05_0CI0lM_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 70,
+      "score_notes": [
+        "Top-tier hood",
+        "2+ BR"
+      ]
+    },
+    {
       "id": "https://chandlerproperties.com/rental-listings/?lid=92e70ec6-0356-4812-a6c9-2f555355c6a4",
       "source": "Chandler Properties",
       "title": "$4,595 2121 26th Street #201, San Francisco, CA 94107 Availa",
@@ -372,15 +350,15 @@
       ]
     },
     {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7925574682.html",
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-top-floor-two-bedroom-in/7926067600.html",
       "source": "Craigslist",
-      "title": "Luxury Pacific Heights 1br Condo",
-      "address": "Luxury Pacific Heights 1br Condo",
+      "title": "Top Floor Two Bedroom in Lower Pac Heights | Shared Laundry | Views",
+      "address": "Top Floor Two Bedroom in Lower Pac Heights | Shared Laundry | Views",
       "neighborhood": "Pacific Heights",
-      "rent": 4900,
+      "rent": 4495,
       "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-luxury-pacific-heights/7925574682.html",
-      "img": "https://images.craigslist.org/00C0C_3aF09FqscPF_0lM0t2_600x450.jpg",
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-top-floor-two-bedroom-in/7926067600.html",
+      "img": "https://images.craigslist.org/00F0F_aTZLKJBT3rc_07K0ak_600x450.jpg",
       "pet_policy": "unknown",
       "parking": false,
       "laundry": "shared",
@@ -411,15 +389,15 @@
       ]
     },
     {
-      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-charming-bedroom-unit-on/7923068230.html",
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-1br-with-in-unit-d-and/7926086167.html",
       "source": "Craigslist",
-      "title": "Charming 1 Bedroom Unit on Best of Fillmore Street",
-      "address": "Charming 1 Bedroom Unit on Best of Fillmore Street",
-      "neighborhood": "Fillmore",
-      "rent": 3500,
+      "title": "1BR with In Unit W/D and Hardwood Floors in Nob Hill! Unit #308",
+      "address": "1BR with In Unit W/D and Hardwood Floors in Nob Hill! Unit #308",
+      "neighborhood": "Nob Hill",
+      "rent": 3720,
       "beds": 1,
-      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-charming-bedroom-unit-on/7923068230.html",
-      "img": "https://images.craigslist.org/00404_hVzLsFmGp4V_0ww0oo_600x450.jpg",
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-1br-with-in-unit-d-and/7926086167.html",
+      "img": "https://images.craigslist.org/00505_ftj6hC5tmx2_0CI0lM_600x450.jpg",
       "pet_policy": "unknown",
       "parking": false,
       "laundry": "shared",
@@ -428,6 +406,65 @@
       "score_notes": [
         "Mid-tier hood",
         "Under $4k"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-elegant-1br-near-hayes/7926085682.html",
+      "source": "Craigslist",
+      "title": "Elegant 1BR \u2013 Near Hayes Valley Boutiques & Dining! Unit #410",
+      "address": "Elegant 1BR \u2013 Near Hayes Valley Boutiques & Dining! Unit #410",
+      "neighborhood": "Hayes Valley",
+      "rent": 3790,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-elegant-1br-near-hayes/7926085682.html",
+      "img": "https://images.craigslist.org/00k0k_1JEDsCUGH82_0CI0lM_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 60,
+      "score_notes": [
+        "Mid-tier hood",
+        "Under $4k"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-2br-near-fillmore-dining/7926086685.html",
+      "source": "Craigslist",
+      "title": "2BR Near Fillmore Dining & Alta Plaza Park! Unit #407",
+      "address": "2BR Near Fillmore Dining & Alta Plaza Park! Unit #407",
+      "neighborhood": "Fillmore",
+      "rent": 5295,
+      "beds": 2,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-2br-near-fillmore-dining/7926086685.html",
+      "img": "https://images.craigslist.org/00X0X_fNGRp4Kc3ix_0CI0lM_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 55,
+      "score_notes": [
+        "Mid-tier hood",
+        "2+ BR"
+      ]
+    },
+    {
+      "id": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-classic-1br-prime-nob/7926084919.html",
+      "source": "Craigslist",
+      "title": "Classic 1BR \u2013 Prime Nob Hill Location! Unit #1340-003",
+      "address": "Classic 1BR \u2013 Prime Nob Hill Location! Unit #1340-003",
+      "neighborhood": "Nob Hill",
+      "rent": 4345,
+      "beds": 1,
+      "link": "https://sfbay.craigslist.org/sfc/apa/d/san-francisco-classic-1br-prime-nob/7926084919.html",
+      "img": "https://images.craigslist.org/01717_ajo6e5YvxXt_0CI0lM_600x450.jpg",
+      "pet_policy": "unknown",
+      "parking": false,
+      "laundry": "shared",
+      "outdoor": false,
+      "score": 50,
+      "score_notes": [
+        "Mid-tier hood"
       ]
     },
     {
